@@ -21,4 +21,14 @@ Qwen 原严格门 strict_r6_parity_result=failed_preserved：同精度、同请�
 
 质量分母来源：IPCV 使用其 repair R4 native Dense；R6 iLLaVA/DToMe/PiToMe 的 Dense quality 复用 canonical Dense，并保留导入来源记录。计时使用各自 sampled280 job 内实际测得的 Dense 配对。不能宣称五方法共享内部完全相同的 Dense，也不能声称所有质量 Dense 都由各方法独立重新生成。MMMU FP16 IPCV keep70 相对其 native Dense 的保留率为 99.6656%，不能换成 canonical 分母后称为 100%。
 
-本仓库仅选入少量许可已标明的上游参考；方法部署代码、真实 prompts、数据和原始运行 journals 未在此公开。全局边界见 [审查状态说明](../../../sources/REVIEW_STATUS.md)。
+原始题干、数据和运行journals不随源码快照公开。上文保留各组合的科学证据边界；源码发布不把未通过或未执行的验收改为通过。
+
+## 当前公开源码入口
+
+- [视觉宿主适配](../../../migration_sources/current_archive/releases/qwen_minimal_peer_reuse_r6_20261001/source/qwen_peer_ports.py)
+- [PiToMe/DToMe核心节点选集](../../../migration_sources/extracted_components/qwen_r6/peer_port_core.py)
+- [运行接口](../../../migration_sources/current_archive/releases/qwen_minimal_peer_reuse_r6_20261001/source/method_runtime.py)
+
+选集省略FiCoCo函数，但原视觉适配仍顶层导入它们；即使只选PiToMe也不是可直接运行组合。
+
+这些是文件快照、选集或调用接口，不是完整可复跑发行包。逐文件取舍见 [FILE_DISPOSITIONS](../../../sources/FILE_DISPOSITIONS.json)；具体阻断见 [运行限制](../../../sources/MIGRATION_RUNTIME_LIMITS.md)；许可见 [组件说明](../../../third_party/COMPONENT_NOTICES.md)。返回 [仓库导航](../../../README.md)。

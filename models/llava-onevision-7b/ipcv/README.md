@@ -13,4 +13,13 @@
 
 本次已核材料中，尚缺与当前 PiToMe FINAL15 相同层级的方法专属结果绑定。此处不以旧历史结果替代当前版本，也不由材料缺口推断该方法从未运行。
 
-本仓库仅选入少量许可已标明的上游参考；方法部署代码、真实 prompts、数据和原始运行 journals 未在此公开。全局边界见 [审查状态说明](../../../sources/REVIEW_STATUS.md)。
+原始题干、数据和运行journals不随源码快照公开。上文保留各组合的科学证据边界；源码发布不把未通过或未执行的验收改为通过。
+
+## 当前公开源码入口
+
+- [IPCV调用及视觉接口](../../../migration_sources/current_archive/releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/onevision_ports.py)
+- [FP32运行接口](../../../migration_sources/current_archive/releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/formal_fp32/onevision_runtime.py)
+
+本批不包含global_ipcv_port及完整依赖，不能把此调用入口视为完整OneVision IPCV源码环境。
+
+这些是文件快照、选集或调用接口，不是完整可复跑发行包。逐文件取舍见 [FILE_DISPOSITIONS](../../../sources/FILE_DISPOSITIONS.json)；具体阻断见 [运行限制](../../../sources/MIGRATION_RUNTIME_LIMITS.md)；许可见 [组件说明](../../../third_party/COMPONENT_NOTICES.md)。返回 [仓库导航](../../../README.md)。

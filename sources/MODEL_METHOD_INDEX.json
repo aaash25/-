@@ -3,144 +3,228 @@
     "model": "SmolVLM2-2.2B",
     "method": "iLLaVA",
     "directory": "models/smolvlm2-2.2b/illava",
-    "code_status": "Documentation only in this directory; migrated runtime withheld",
+    "code_status": "Documentation entry with links to selected source snapshots, components or call sites; not a complete runtime",
     "acceptance": "NOT_ASSERTED",
     "material_status": "REUSED_QUALITY_SOURCE_MAPPING_AVAILABLE_VERIFIED12",
-    "audit_status": "LIMITED_CORE_STATIC_SUPPORT"
+    "audit_status": "LIMITED_CORE_STATIC_SUPPORT",
+    "public_source_paths": [
+      "migration_sources/current_archive/route/releases/smol_existing_configuration_correction_20261001_r1/source/route/benchmarks/smolvlm_full_reproduction_20260903/production/peer_common.py"
+    ],
+    "source_scope_note": "iLLaVA作者实现和混含illava_step的完整Smol模块未随公开包收入。PiToMe选集保留的iLLaVA调用缺少该函数，不能作为iLLaVA实现运行。"
   },
   {
     "model": "SmolVLM2-2.2B",
     "method": "PiToMe",
     "directory": "models/smolvlm2-2.2b/pitome",
-    "code_status": "Documentation only in this directory; migrated runtime withheld",
+    "code_status": "Documentation entry with links to selected source snapshots, components or call sites; not a complete runtime",
     "acceptance": "NOT_ASSERTED",
     "material_status": "REUSED_QUALITY_BINDINGS_AVAILABLE_VERIFIED12",
-    "audit_status": "LIMITED_CORE_STATIC_SUPPORT"
+    "audit_status": "LIMITED_CORE_STATIC_SUPPORT",
+    "public_source_paths": [
+      "migration_sources/extracted_components/smol_pitome/smol_merge_ports.py",
+      "migration_sources/current_archive/route/releases/smol_existing_configuration_correction_20261001_r1/source/route/benchmarks/smolvlm_full_reproduction_20260903/production/peer_common.py"
+    ],
+    "source_scope_note": "选集不在原运行器预期目录，并保留引用已省略illava_step的原分支；PiToMe选集不等于完整安装包。"
   },
   {
     "model": "SmolVLM2-2.2B",
     "method": "DToMe/DyMU",
     "directory": "models/smolvlm2-2.2b/dymu",
-    "code_status": "Documentation only in this directory; migrated runtime withheld",
+    "code_status": "Documentation entry with links to selected source snapshots, components or call sites; not a complete runtime",
     "acceptance": "NOT_ASSERTED",
     "material_status": "CURRENT_CORRECTED_MATRIX_AVAILABLE",
-    "audit_status": "CONFIRMED_AUTHOR_RULE_NON_EQUIVALENCE"
+    "audit_status": "CONFIRMED_AUTHOR_RULE_NON_EQUIVALENCE",
+    "public_source_paths": [
+      "migration_sources/current_archive/route/releases/smol_existing_configuration_correction_20261001_r1/source/route/benchmarks/smolvlm_full_reproduction_20260903/migration/dtome_legacy_bridge.py",
+      "migration_sources/current_archive/route/releases/smol_existing_configuration_correction_20261001_r1/source/route/hypotheses/v439_h125_dtome_smolvlm_pope_full300/evaluate.py",
+      "migration_sources/current_archive/route/releases/smol_existing_configuration_correction_20261001_r1/source/route/benchmarks/smolvlm_full_reproduction_20260903/production/peer_common.py"
+    ],
+    "source_scope_note": "作者阈值/源码资源和模型数据未带齐；保留已披露dispatch/none-pass差异，不以新封装替换旧结果身份。"
   },
   {
     "model": "SmolVLM2-2.2B",
     "method": "IPCV",
     "directory": "models/smolvlm2-2.2b/ipcv",
-    "code_status": "Documentation only in this directory; migrated runtime withheld",
+    "code_status": "Documentation entry with links to selected source snapshots, components or call sites; not a complete runtime",
     "acceptance": "NOT_ASSERTED",
     "material_status": "CURRENT_CORRECTED_MATRIX_AVAILABLE",
-    "audit_status": "LIMITED_CORE_STATIC_SUPPORT"
+    "audit_status": "LIMITED_CORE_STATIC_SUPPORT",
+    "public_source_paths": [
+      "migration_sources/current_archive/route/releases/smol_existing_configuration_correction_20261001_r1/source/route/benchmarks/smolvlm_full_reproduction_20260903/migration/smol_ipcv_port.py",
+      "migration_sources/current_archive/route/releases/smol_existing_configuration_correction_20261001_r1/source/route/benchmarks/smolvlm_full_reproduction_20260903/production/peer_common.py"
+    ],
+    "source_scope_note": "还依赖原目录中的smol_merge_ports、冻结资源及环境；参考分支的InternVL MIT与IPCV新增部分Apache许可分别保留。"
   },
   {
     "model": "Qwen2-VL-2B",
     "method": "iLLaVA",
     "directory": "models/qwen2-vl-2b/illava",
-    "code_status": "Documentation only in this directory; migrated runtime withheld",
+    "code_status": "Documentation entry with links to selected source snapshots, components or call sites; not a complete runtime",
     "acceptance": "NOT_ASSERTED",
     "material_status": "CURRENT_MATRIX_AVAILABLE_WITH_SEPARATE_QUALITY_TIMING_PINS",
-    "audit_status": "LIMITED_CORE_STATIC_SUPPORT"
+    "audit_status": "LIMITED_CORE_STATIC_SUPPORT",
+    "public_source_paths": [
+      "migration_sources/current_archive/releases/qwen_minimal_peer_reuse_r6_20261001/source/method_runtime.py",
+      "migration_sources/current_archive/releases/qwen_minimal_peer_reuse_r6_20261001/source/grid.py"
+    ],
+    "source_scope_note": "iLLaVA作者实现及三份对应Qwen源码未随公开快照收入；共享调用/配置不等于iLLaVA核心已发布。"
   },
   {
     "model": "Qwen2-VL-2B",
     "method": "PiToMe",
     "directory": "models/qwen2-vl-2b/pitome",
-    "code_status": "Documentation only in this directory; migrated runtime withheld",
+    "code_status": "Documentation entry with links to selected source snapshots, components or call sites; not a complete runtime",
     "acceptance": "NOT_ASSERTED",
     "material_status": "CURRENT_MATRIX_AVAILABLE_WITH_SEPARATE_QUALITY_TIMING_PINS",
-    "audit_status": "LIMITED_CORE_STATIC_SUPPORT"
+    "audit_status": "LIMITED_CORE_STATIC_SUPPORT",
+    "public_source_paths": [
+      "migration_sources/current_archive/releases/qwen_minimal_peer_reuse_r6_20261001/source/qwen_peer_ports.py",
+      "migration_sources/extracted_components/qwen_r6/peer_port_core.py",
+      "migration_sources/current_archive/releases/qwen_minimal_peer_reuse_r6_20261001/source/method_runtime.py"
+    ],
+    "source_scope_note": "选集省略FiCoCo函数，但原视觉适配仍顶层导入它们；即使只选PiToMe也不是可直接运行组合。"
   },
   {
     "model": "Qwen2-VL-2B",
     "method": "DToMe/DyMU",
     "directory": "models/qwen2-vl-2b/dymu",
-    "code_status": "Documentation only in this directory; migrated runtime withheld",
+    "code_status": "Documentation entry with links to selected source snapshots, components or call sites; not a complete runtime",
     "acceptance": "NOT_ASSERTED",
     "material_status": "CURRENT_MATRIX_AVAILABLE_WITH_SEPARATE_QUALITY_TIMING_PINS",
-    "audit_status": "FIXED_SCALAR_THRESHOLD_VARIANT"
+    "audit_status": "FIXED_SCALAR_THRESHOLD_VARIANT",
+    "public_source_paths": [
+      "migration_sources/current_archive/releases/qwen_minimal_peer_reuse_r6_20261001/source/qwen_peer_ports.py",
+      "migration_sources/extracted_components/qwen_r6/peer_port_core.py",
+      "migration_sources/current_archive/releases/qwen_minimal_peer_reuse_r6_20261001/source/grid.py"
+    ],
+    "source_scope_note": "保留原固定标量阈值变体身份。选集与原适配存在顶层缺符号导入，不能直接替换完整冻结模块。"
   },
   {
     "model": "Qwen2-VL-2B",
     "method": "IPCV",
     "directory": "models/qwen2-vl-2b/ipcv",
-    "code_status": "Documentation only in this directory; migrated runtime withheld",
+    "code_status": "Documentation entry with links to selected source snapshots, components or call sites; not a complete runtime",
     "acceptance": "NOT_ASSERTED",
     "material_status": "CURRENT_MATRIX_AVAILABLE_WITH_SEPARATE_QUALITY_TIMING_PINS",
-    "audit_status": "LIMITED_CORE_STATIC_SUPPORT"
+    "audit_status": "LIMITED_CORE_STATIC_SUPPORT",
+    "public_source_paths": [
+      "migration_sources/current_archive/releases/qwen_minimal_peer_reuse_r6_20261001/source/method_runtime.py",
+      "migration_sources/current_archive/releases/qwen_minimal_peer_reuse_r6_20261001/source/fp16_eager_stability.py"
+    ],
+    "source_scope_note": "本批提供项目侧接口快照，未带齐IPCV作者包、repair资源、冻结evaluator及完整运行依赖。"
   },
   {
     "model": "LLaVA1.5-7B",
     "method": "iLLaVA",
     "directory": "models/llava15-7b/illava",
-    "code_status": "Documentation only in this directory; migrated runtime withheld",
+    "code_status": "Documentation entry with links to selected source snapshots, components or call sites; not a complete runtime",
     "acceptance": "NOT_ASSERTED",
     "material_status": "MISSING_CURRENT_RESULT_BINDING",
-    "audit_status": "CURRENT_RESULT_BINDING_INCOMPLETE"
+    "audit_status": "CURRENT_RESULT_BINDING_INCOMPLETE",
+    "public_source_paths": [
+      "migration_sources/current_archive/releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/llava_runtime.py",
+      "migration_sources/current_archive/releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/grid.py"
+    ],
+    "source_scope_note": "iLLaVA作者算法未随公开包收入，LLaVA共享运行器所需clip_peer_ports等资源亦未带齐；这些链接仅定位项目侧调用。"
   },
   {
     "model": "LLaVA1.5-7B",
     "method": "PiToMe",
     "directory": "models/llava15-7b/pitome",
-    "code_status": "Documentation only in this directory; migrated runtime withheld",
+    "code_status": "Documentation entry with links to selected source snapshots, components or call sites; not a complete runtime",
     "acceptance": "NOT_ASSERTED",
     "material_status": "CURRENT_FP32_R096_FINAL15_AVAILABLE",
-    "audit_status": "LIMITED_CORE_STATIC_SUPPORT"
+    "audit_status": "LIMITED_CORE_STATIC_SUPPORT",
+    "public_source_paths": [
+      "migration_sources/current_archive/releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/frozen_sources/pitome_author_fp16.py",
+      "migration_sources/current_archive/releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/llava_runtime.py",
+      "migration_sources/decoded_author_payloads/pitome/patch/clip_hf.py"
+    ],
+    "source_scope_note": "原门控脚本名字中的FP16不替代本页当前FP32结果身份；原载荷与新增归属说明的明文副本hash分开记录。仍缺完整冻结桥接/环境。"
   },
   {
     "model": "LLaVA1.5-7B",
     "method": "DToMe/DyMU",
     "directory": "models/llava15-7b/dymu",
-    "code_status": "Documentation only in this directory; migrated runtime withheld",
+    "code_status": "Documentation entry with links to selected source snapshots, components or call sites; not a complete runtime",
     "acceptance": "NOT_ASSERTED",
     "material_status": "MISSING_CURRENT_RESULT_BINDING",
-    "audit_status": "CURRENT_RESULT_BINDING_INCOMPLETE"
+    "audit_status": "CURRENT_RESULT_BINDING_INCOMPLETE",
+    "public_source_paths": [
+      "migration_sources/current_archive/releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/llava_runtime.py",
+      "migration_sources/current_archive/releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/grid.py"
+    ],
+    "source_scope_note": "本批未收入author_dymu_bridge及完整作者资源，不能声称完整LLaVA DToMe运行实现已经齐备。"
   },
   {
     "model": "LLaVA1.5-7B",
     "method": "IPCV",
     "directory": "models/llava15-7b/ipcv",
-    "code_status": "Documentation only in this directory; migrated runtime withheld",
+    "code_status": "Documentation entry with links to selected source snapshots, components or call sites; not a complete runtime",
     "acceptance": "NOT_ASSERTED",
     "material_status": "MISSING_CURRENT_RESULT_BINDING",
-    "audit_status": "CURRENT_RESULT_BINDING_INCOMPLETE"
+    "audit_status": "CURRENT_RESULT_BINDING_INCOMPLETE",
+    "public_source_paths": [
+      "migration_sources/current_archive/releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/llava_runtime.py",
+      "migration_sources/current_archive/releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/grid.py"
+    ],
+    "source_scope_note": "本批未收入ipcv_clip_batch及完整依赖；运行器文件完整不代表方法运行环境完整。"
   },
   {
     "model": "LLaVA-OneVision-7B",
     "method": "iLLaVA",
     "directory": "models/llava-onevision-7b/illava",
-    "code_status": "Documentation only in this directory; migrated runtime withheld",
+    "code_status": "Documentation entry with links to selected source snapshots, components or call sites; not a complete runtime",
     "acceptance": "NOT_ASSERTED",
     "material_status": "MISSING_CURRENT_RESULT_BINDING",
-    "audit_status": "CURRENT_RESULT_BINDING_INCOMPLETE"
+    "audit_status": "CURRENT_RESULT_BINDING_INCOMPLETE",
+    "public_source_paths": [
+      "migration_sources/current_archive/releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/author_visual_source.py",
+      "migration_sources/current_archive/releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/onevision_ports.py"
+    ],
+    "source_scope_note": "iLLaVA作者实现未随公开包收入；author_illava_bridge及冻结作者资源也未带齐。公开加载器不内嵌作者算法。"
   },
   {
     "model": "LLaVA-OneVision-7B",
     "method": "PiToMe",
     "directory": "models/llava-onevision-7b/pitome",
-    "code_status": "Documentation only in this directory; migrated runtime withheld",
+    "code_status": "Documentation entry with links to selected source snapshots, components or call sites; not a complete runtime",
     "acceptance": "NOT_ASSERTED",
     "material_status": "CURRENT_FP32_R096_FINAL15_AVAILABLE",
-    "audit_status": "LIMITED_CORE_STATIC_SUPPORT"
+    "audit_status": "LIMITED_CORE_STATIC_SUPPORT",
+    "public_source_paths": [
+      "migration_sources/current_archive/releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/onevision_ports.py",
+      "migration_sources/extracted_components/onevision_shared_pitome/smol_merge_ports.py",
+      "migration_sources/current_archive/releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/formal_fp32/onevision_runtime.py"
+    ],
+    "source_scope_note": "原桥接顶层依赖本包缺少的author_dtome_bridge/author_illava_bridge；单选PiToMe也不构成独立可运行组合。"
   },
   {
     "model": "LLaVA-OneVision-7B",
     "method": "DToMe/DyMU",
     "directory": "models/llava-onevision-7b/dymu",
-    "code_status": "Documentation only in this directory; migrated runtime withheld",
+    "code_status": "Documentation entry with links to selected source snapshots, components or call sites; not a complete runtime",
     "acceptance": "NOT_ASSERTED",
     "material_status": "MISSING_CURRENT_RESULT_BINDING",
-    "audit_status": "CURRENT_RESULT_BINDING_INCOMPLETE"
+    "audit_status": "CURRENT_RESULT_BINDING_INCOMPLETE",
+    "public_source_paths": [
+      "migration_sources/current_archive/releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/author_visual_source.py",
+      "migration_sources/current_archive/releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/onevision_ports.py"
+    ],
+    "source_scope_note": "本批未带齐author_dtome_bridge与冻结作者资源；读取器/调用接口不等于作者DToMe算法文件已经收入。"
   },
   {
     "model": "LLaVA-OneVision-7B",
     "method": "IPCV",
     "directory": "models/llava-onevision-7b/ipcv",
-    "code_status": "Documentation only in this directory; migrated runtime withheld",
+    "code_status": "Documentation entry with links to selected source snapshots, components or call sites; not a complete runtime",
     "acceptance": "NOT_ASSERTED",
     "material_status": "MISSING_CURRENT_RESULT_BINDING",
-    "audit_status": "CURRENT_RESULT_BINDING_INCOMPLETE"
+    "audit_status": "CURRENT_RESULT_BINDING_INCOMPLETE",
+    "public_source_paths": [
+      "migration_sources/current_archive/releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/onevision_ports.py",
+      "migration_sources/current_archive/releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/formal_fp32/onevision_runtime.py"
+    ],
+    "source_scope_note": "本批不包含global_ipcv_port及完整依赖，不能把此调用入口视为完整OneVision IPCV源码环境。"
   }
 ]

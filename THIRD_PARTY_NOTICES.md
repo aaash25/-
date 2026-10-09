@@ -1,3 +1,5 @@
+> 范围说明：以下保留首批公开审查记录，其中源码数量和暂缓文件描述只针对首批。当前已追加迁移源码快照及许可补充；请以[仓库导航](README.md)和当前组件说明为准，不把首批范围误读为当前仓库没有源码。
+
 # 第三方来源与许可边界
 
 PiToMe 来自 [hchautran/PiToMe 固定版本](https://github.com/hchautran/PiToMe/tree/550b5deed94aadfeac28bfbe381d87e672044a40)。本次仅收入 merge.py、utils.py 两份参考文件。其 Meta Platforms, Inc. and affiliates 原版权头原样保留。PiToMe 作者及引用见 [参考说明](third_party/pitome/README.md)。根 LICENSE 的 CC BY-NC 4.0 与非商业条件继续适用，详见 [原许可文本](third_party/pitome/LICENSE) 与 [官方条款](https://creativecommons.org/licenses/by-nc/4.0/legalcode.en)。setup.py 的 MIT 元数据不能覆盖根许可；本仓库不将这些文件改授 MIT，也不暗示上游作者背书。
