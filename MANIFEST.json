@@ -1,0 +1,146 @@
+{
+  "algorithm": "sha256",
+  "scope": "Explicit publishable additions only; existing root README.md is excluded and must be preserved",
+  "files": [
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1857,
+      "sha256": "141945e8fd50d66f0eb21b4b16a826b875caae36c6c7cb90d843097b43ab2099"
+    },
+    {
+      "path": "models/llava-onevision-7b/dymu/README.md",
+      "bytes": 1187,
+      "sha256": "5954aa99d6d3557f99732c792d53257cd56563f6c3395efc4795b22a6a38fafb"
+    },
+    {
+      "path": "models/llava-onevision-7b/illava/README.md",
+      "bytes": 1342,
+      "sha256": "5a18ddc9c22201cccd838c9d7d49adbc4e5b0100d96f427f5dc0c61a9c1eb973"
+    },
+    {
+      "path": "models/llava-onevision-7b/ipcv/README.md",
+      "bytes": 1149,
+      "sha256": "3215bb52ce9b2f376adf5e036f9f3c11419c5da8fa5d16fa228efb76380fe345"
+    },
+    {
+      "path": "models/llava-onevision-7b/pitome/README.md",
+      "bytes": 1493,
+      "sha256": "164788659c74eedd0c428ed60d5a9a4edeaa5561674232092cac14dfc958b06a"
+    },
+    {
+      "path": "models/llava15-7b/dymu/README.md",
+      "bytes": 1180,
+      "sha256": "6d47fae009389733aa940c3085cbc37e6f463bd313fd856074dbc7ad7b4a3709"
+    },
+    {
+      "path": "models/llava15-7b/illava/README.md",
+      "bytes": 1335,
+      "sha256": "5fcbbf146869ddca6f01a0e2a521ecd657cc78927bea7a18a0ebeb86bcb0998c"
+    },
+    {
+      "path": "models/llava15-7b/ipcv/README.md",
+      "bytes": 1142,
+      "sha256": "e5c57ff786e84d22fa93f819af78f2766fb0fee081115c09f0a303cf23c98486"
+    },
+    {
+      "path": "models/llava15-7b/pitome/README.md",
+      "bytes": 1190,
+      "sha256": "cadabf0fb81072432bee01c0212c2f1507c20f7e86317b7a72b9ec41ea751da2"
+    },
+    {
+      "path": "models/qwen2-vl-2b/dymu/README.md",
+      "bytes": 2703,
+      "sha256": "0451442d5d0246b29cedea538d98e0ce67177bb7e9dd500d9cffc421e1289a7b"
+    },
+    {
+      "path": "models/qwen2-vl-2b/illava/README.md",
+      "bytes": 2717,
+      "sha256": "e78f3fe1d93c8d3b4a1b99a481dd6963284ad9a6e97b43e038cce094f788d287"
+    },
+    {
+      "path": "models/qwen2-vl-2b/ipcv/README.md",
+      "bytes": 2561,
+      "sha256": "08062b535606b0e4cd98dad929c3c0b205e937501719bbd0a45a99ed624b5562"
+    },
+    {
+      "path": "models/qwen2-vl-2b/pitome/README.md",
+      "bytes": 2653,
+      "sha256": "5ebb8f161b2119485d8b45dba6766d7615dc8dec90704fa2245109b637316f15"
+    },
+    {
+      "path": "models/smolvlm2-2.2b/dymu/README.md",
+      "bytes": 1639,
+      "sha256": "255f0fc74160310742feaedd6db86005a7c9f361e847ae00a7868cb1d2ded433"
+    },
+    {
+      "path": "models/smolvlm2-2.2b/illava/README.md",
+      "bytes": 1871,
+      "sha256": "aea962f2509a8edd1527c0e50d86665419f1413cabd784af6deb46fafd78f62d"
+    },
+    {
+      "path": "models/smolvlm2-2.2b/ipcv/README.md",
+      "bytes": 1550,
+      "sha256": "75e6fa50133a43a2e6b0ef95400e5252e7c4e61d139bab794fecd6aa057669f9"
+    },
+    {
+      "path": "models/smolvlm2-2.2b/pitome/README.md",
+      "bytes": 1628,
+      "sha256": "adece0ab938b66ef3cd9cbf37c2fb1a0c6cb0b1490eb4b287c1ae1d55c9bd5b5"
+    },
+    {
+      "path": "sources/MODEL_METHOD_INDEX.json",
+      "bytes": 5620,
+      "sha256": "e7af2564b16e134ad265dc2859011e9e6ef706ccde6bcba478e1015ee20dd769"
+    },
+    {
+      "path": "sources/PUBLIC_EXCLUSIONS.md",
+      "bytes": 1202,
+      "sha256": "60da300f44de755acc64966369bf12e845b482a76b9df1c79e8201f77c954746"
+    },
+    {
+      "path": "sources/REVIEW_STATUS.md",
+      "bytes": 3299,
+      "sha256": "e6d43ccebb0e41200543596bb00080bb225697672b107395388eddd57e785cb9"
+    },
+    {
+      "path": "sources/SELECTED_FILE_PROVENANCE.json",
+      "bytes": 5251,
+      "sha256": "050a78c175043ba6d16e2b695dfbb924e4eac1430cd39bf735dc54d3a4b724fa"
+    },
+    {
+      "path": "sources/UPSTREAM_INDEX.json",
+      "bytes": 728,
+      "sha256": "1913b9a316faaf69dfe7e8354dd9590de3709823bbc0684db39bc7fb04180d4f"
+    },
+    {
+      "path": "third_party/dymu/LICENSE",
+      "bytes": 1252,
+      "sha256": "af2a12ff9c61e68b4c880bd1d781b5843434c76adf78eba693461a8657318209"
+    },
+    {
+      "path": "third_party/ipcv/LICENSE",
+      "bytes": 11558,
+      "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6"
+    },
+    {
+      "path": "third_party/pitome/LICENSE",
+      "bytes": 19738,
+      "sha256": "4096a38232552bceaa42ae2b0604ec93fb6039b2da4df78a71bd809f39f99385"
+    },
+    {
+      "path": "third_party/pitome/README.md",
+      "bytes": 1460,
+      "sha256": "172e27c1f664f2fd9b4ca99b9f776906d7ef73defd7827ff80c6d453df96fa1f"
+    },
+    {
+      "path": "third_party/pitome/algo/pitome/merge.py",
+      "bytes": 9812,
+      "sha256": "57f286663de05b1ce6a239f0db015cf745475a8c271e4ac0d214dc3e521b6145"
+    },
+    {
+      "path": "third_party/pitome/algo/pitome/utils.py",
+      "bytes": 3452,
+      "sha256": "fcbe905b6e24b827c92711bf5764cb27c888acf45423498946923f09aa629b40"
+    }
+  ]
+}

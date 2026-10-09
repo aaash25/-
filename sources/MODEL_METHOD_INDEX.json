@@ -1,0 +1,146 @@
+[
+  {
+    "model": "SmolVLM2-2.2B",
+    "method": "iLLaVA",
+    "directory": "models/smolvlm2-2.2b/illava",
+    "code_status": "Documentation only in this directory; migrated runtime withheld",
+    "acceptance": "NOT_ASSERTED",
+    "material_status": "REUSED_QUALITY_SOURCE_MAPPING_AVAILABLE_VERIFIED12",
+    "audit_status": "LIMITED_CORE_STATIC_SUPPORT"
+  },
+  {
+    "model": "SmolVLM2-2.2B",
+    "method": "PiToMe",
+    "directory": "models/smolvlm2-2.2b/pitome",
+    "code_status": "Documentation only in this directory; migrated runtime withheld",
+    "acceptance": "NOT_ASSERTED",
+    "material_status": "REUSED_QUALITY_BINDINGS_AVAILABLE_VERIFIED12",
+    "audit_status": "LIMITED_CORE_STATIC_SUPPORT"
+  },
+  {
+    "model": "SmolVLM2-2.2B",
+    "method": "DToMe/DyMU",
+    "directory": "models/smolvlm2-2.2b/dymu",
+    "code_status": "Documentation only in this directory; migrated runtime withheld",
+    "acceptance": "NOT_ASSERTED",
+    "material_status": "CURRENT_CORRECTED_MATRIX_AVAILABLE",
+    "audit_status": "CONFIRMED_AUTHOR_RULE_NON_EQUIVALENCE"
+  },
+  {
+    "model": "SmolVLM2-2.2B",
+    "method": "IPCV",
+    "directory": "models/smolvlm2-2.2b/ipcv",
+    "code_status": "Documentation only in this directory; migrated runtime withheld",
+    "acceptance": "NOT_ASSERTED",
+    "material_status": "CURRENT_CORRECTED_MATRIX_AVAILABLE",
+    "audit_status": "LIMITED_CORE_STATIC_SUPPORT"
+  },
+  {
+    "model": "Qwen2-VL-2B",
+    "method": "iLLaVA",
+    "directory": "models/qwen2-vl-2b/illava",
+    "code_status": "Documentation only in this directory; migrated runtime withheld",
+    "acceptance": "NOT_ASSERTED",
+    "material_status": "CURRENT_MATRIX_AVAILABLE_WITH_SEPARATE_QUALITY_TIMING_PINS",
+    "audit_status": "LIMITED_CORE_STATIC_SUPPORT"
+  },
+  {
+    "model": "Qwen2-VL-2B",
+    "method": "PiToMe",
+    "directory": "models/qwen2-vl-2b/pitome",
+    "code_status": "Documentation only in this directory; migrated runtime withheld",
+    "acceptance": "NOT_ASSERTED",
+    "material_status": "CURRENT_MATRIX_AVAILABLE_WITH_SEPARATE_QUALITY_TIMING_PINS",
+    "audit_status": "LIMITED_CORE_STATIC_SUPPORT"
+  },
+  {
+    "model": "Qwen2-VL-2B",
+    "method": "DToMe/DyMU",
+    "directory": "models/qwen2-vl-2b/dymu",
+    "code_status": "Documentation only in this directory; migrated runtime withheld",
+    "acceptance": "NOT_ASSERTED",
+    "material_status": "CURRENT_MATRIX_AVAILABLE_WITH_SEPARATE_QUALITY_TIMING_PINS",
+    "audit_status": "FIXED_SCALAR_THRESHOLD_VARIANT"
+  },
+  {
+    "model": "Qwen2-VL-2B",
+    "method": "IPCV",
+    "directory": "models/qwen2-vl-2b/ipcv",
+    "code_status": "Documentation only in this directory; migrated runtime withheld",
+    "acceptance": "NOT_ASSERTED",
+    "material_status": "CURRENT_MATRIX_AVAILABLE_WITH_SEPARATE_QUALITY_TIMING_PINS",
+    "audit_status": "LIMITED_CORE_STATIC_SUPPORT"
+  },
+  {
+    "model": "LLaVA1.5-7B",
+    "method": "iLLaVA",
+    "directory": "models/llava15-7b/illava",
+    "code_status": "Documentation only in this directory; migrated runtime withheld",
+    "acceptance": "NOT_ASSERTED",
+    "material_status": "MISSING_CURRENT_RESULT_BINDING",
+    "audit_status": "CURRENT_RESULT_BINDING_INCOMPLETE"
+  },
+  {
+    "model": "LLaVA1.5-7B",
+    "method": "PiToMe",
+    "directory": "models/llava15-7b/pitome",
+    "code_status": "Documentation only in this directory; migrated runtime withheld",
+    "acceptance": "NOT_ASSERTED",
+    "material_status": "CURRENT_FP32_R096_FINAL15_AVAILABLE",
+    "audit_status": "LIMITED_CORE_STATIC_SUPPORT"
+  },
+  {
+    "model": "LLaVA1.5-7B",
+    "method": "DToMe/DyMU",
+    "directory": "models/llava15-7b/dymu",
+    "code_status": "Documentation only in this directory; migrated runtime withheld",
+    "acceptance": "NOT_ASSERTED",
+    "material_status": "MISSING_CURRENT_RESULT_BINDING",
+    "audit_status": "CURRENT_RESULT_BINDING_INCOMPLETE"
+  },
+  {
+    "model": "LLaVA1.5-7B",
+    "method": "IPCV",
+    "directory": "models/llava15-7b/ipcv",
+    "code_status": "Documentation only in this directory; migrated runtime withheld",
+    "acceptance": "NOT_ASSERTED",
+    "material_status": "MISSING_CURRENT_RESULT_BINDING",
+    "audit_status": "CURRENT_RESULT_BINDING_INCOMPLETE"
+  },
+  {
+    "model": "LLaVA-OneVision-7B",
+    "method": "iLLaVA",
+    "directory": "models/llava-onevision-7b/illava",
+    "code_status": "Documentation only in this directory; migrated runtime withheld",
+    "acceptance": "NOT_ASSERTED",
+    "material_status": "MISSING_CURRENT_RESULT_BINDING",
+    "audit_status": "CURRENT_RESULT_BINDING_INCOMPLETE"
+  },
+  {
+    "model": "LLaVA-OneVision-7B",
+    "method": "PiToMe",
+    "directory": "models/llava-onevision-7b/pitome",
+    "code_status": "Documentation only in this directory; migrated runtime withheld",
+    "acceptance": "NOT_ASSERTED",
+    "material_status": "CURRENT_FP32_R096_FINAL15_AVAILABLE",
+    "audit_status": "LIMITED_CORE_STATIC_SUPPORT"
+  },
+  {
+    "model": "LLaVA-OneVision-7B",
+    "method": "DToMe/DyMU",
+    "directory": "models/llava-onevision-7b/dymu",
+    "code_status": "Documentation only in this directory; migrated runtime withheld",
+    "acceptance": "NOT_ASSERTED",
+    "material_status": "MISSING_CURRENT_RESULT_BINDING",
+    "audit_status": "CURRENT_RESULT_BINDING_INCOMPLETE"
+  },
+  {
+    "model": "LLaVA-OneVision-7B",
+    "method": "IPCV",
+    "directory": "models/llava-onevision-7b/ipcv",
+    "code_status": "Documentation only in this directory; migrated runtime withheld",
+    "acceptance": "NOT_ASSERTED",
+    "material_status": "MISSING_CURRENT_RESULT_BINDING",
+    "audit_status": "CURRENT_RESULT_BINDING_INCOMPLETE"
+  }
+]

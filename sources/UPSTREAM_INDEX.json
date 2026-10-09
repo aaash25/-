@@ -1,0 +1,22 @@
+{
+  "pitome": {
+    "repository": "https://github.com/hchautran/PiToMe",
+    "commit": "550b5deed94aadfeac28bfbe381d87e672044a40",
+    "root_license": "CC-BY-NC-4.0"
+  },
+  "dymu": {
+    "repository": "https://github.com/MikeWangWZHL/dymu",
+    "commit": "3770d6add8fd9b972ae611f3f3b16a552dea13cc",
+    "root_license": "MIT (preserve per-component notices)"
+  },
+  "illava": {
+    "repository": "https://github.com/hulianyuyy/iLLaVA",
+    "commit": "d2d291877ba9c7d4781cdc9ed1820661c8e47291",
+    "root_license": "METHOD_ROOT_LICENSE_NOT_FOUND_AT_PINNED_COMMIT"
+  },
+  "ipcv": {
+    "repository": "https://github.com/Perkzi/IPCV",
+    "commit": "29726f044f0f9c0c2be4eb0005888ddeb5fa188e",
+    "root_license": "Apache-2.0"
+  }
+}

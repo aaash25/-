@@ -1,0 +1,27 @@
+# 16 组合的公开说明边界
+
+日期：2026-10-09。这里公开既有证据的有界结论，不是完整部署包、论文结果表、可复跑承诺或16组全验收通过声明。每个组合的说明与分类见 MODEL_METHOD_INDEX.json。
+
+- Qwen：保留原 strict_r6_parity_result=failed_preserved。失败比较完整生成 token 序列，FP16 12条差异，根因未定位；不是浮点 bitwise 门，不得称为已证无害噪声。各方法质量分母和计时来源分别披露。DToMe 是固定标量阈值视觉迁移变体。
+- Smol：corrected180 只覆盖 IPCV/DToMe。iLLaVA 已有150个双精度数据集点的质量来源映射/R4计时配对，联合可比为 VERIFIED12、合计120点；PiToMe亦有保留质量绑定。POPE/MMVP/MME旧selector未统一，不能把15集原数字当成15集统一可比验收。Smol DToMe相对完整作者dispatch的非等价已确证，实际正式答案/分数影响未量化。
+- LLaVA1.5/OneVision：当前PiToMe FP32 r=.96的FINAL15摘要单列；其它方法不能借用该结果身份。OneVision为26层，MMVP原exit receipt仍缺失。摘要状态和源码身份不代替全量运行收据。
+- 多组已有有限正面源码或数学证据，不再笼统写“全部核心尚未核对”；这些证据仍不能升级成新GPU验证、全栈等价或全部样本源码import链重核。
+
+本次公开副本没有实际基准题干、原始输出、绝对环境路径、服务器连接资料或执行日志。没有运行实验模型、修改方法源码或覆盖根README。第三方仅收入3份原许可证和2份PiToMe参考源码；并非16份可运行实现。PiToMe非商业许可、iLLaVA许可缺口与clip_hf.py内嵌来源缺口分别处理。
+
+## 说明所依据的既有审查文件身份
+
+下列只提供研究审查资料的名称/摘要身份，不公开其原始私人内容、路径、逐请求数据或执行日志。文件hash识别文档本身，不替代其科学证据，也不是公开可复跑承诺。
+
+- 公开发布前检查.txt: SHA256 d371c9bd114efdfd94e84b104ead21e8bfcf4982b354542078a0393b3137abcf
+- LATEST_MODEL_METHOD_INDEX.json: SHA256 a9d8c268855929c222e01b397702ded604cea55bd4821d135e26d8d0b693f63c
+- qwen_dense_parity_cause_audit_20261009: SHA256 d537f2493d9a8f6909701cfb730874f3fb277bac802354cf725a9c0610fccaf2
+- audit_next_qwen_dtome_20261009: SHA256 87c340dcb9446779d339897089b3d45692c42c09d0015795dcca84a84b0e0a50
+- audit_next_qwen_illava_20261009: SHA256 9c0512bd8a945539ae266a0a3fa618400da83a2a1e21d3e7fa702422f2da651d
+- audit_next_qwen_ipcv_20261009: SHA256 c8069e0bdc26d652aeb2a89d919f352659dbaaec24d2a56fe8473aeb11a30697
+- audit_next_qwen_pitome_20261009: SHA256 a055624df76f793e6e52d0b7452e5a141f4dd38e3882a0756c6490ea0a30d7e6
+- audit_next_smol_illava_20261009: SHA256 55d1dd41529740ad31529a9d660f3836f3a6bd10f10a432679bdd2851dafecd5
+- audit_next_smol_ipcv_20261009: SHA256 9850bb8ece4d6529f5d8fcf03fb3871f6e03b5687b461452ac46f7556bf88806
+- audit_next_smol_dtome_crosscheck_20261009: SHA256 41bddf41a9f2bc1c2473d4ca76520d7dbe5dfa4cdeb8800722cf97da6037bd72
+- smol_pitome_fidelity_20261009_0242: SHA256 c5e48292cc3791743bb7d738b4a017c7d6644148e31c3bfc48c830c848e18ec6
+- audit_next_onevision_pitome_20261009: SHA256 a18ebe72f88a1de30cbe4578c80498dfbce5aaa10bd03f9351eebfb4355832f9

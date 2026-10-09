@@ -1,0 +1,91 @@
+[
+  {
+    "path": "third_party/pitome/LICENSE",
+    "upstream_path": "LICENSE",
+    "upstream": {
+      "repository": "https://github.com/hchautran/PiToMe",
+      "commit": "550b5deed94aadfeac28bfbe381d87e672044a40",
+      "root_license": "CC-BY-NC-4.0"
+    },
+    "sha256": "4096a38232552bceaa42ae2b0604ec93fb6039b2da4df78a71bd809f39f99385",
+    "bytes": 19738,
+    "changes": "Line endings only: archived candidate uses CRLF; pinned GitHub blob uses LF. No other byte differences. Candidate bytes are preserved.",
+    "upstream_url": "https://github.com/hchautran/PiToMe/blob/550b5deed94aadfeac28bfbe381d87e672044a40/LICENSE",
+    "upstream_git_blob_sha": "fc499a762021e7edcec2d7ecfb0d9148d949a53c",
+    "upstream_sha256": "517acfe79046fca3d989a5a6f8b55b8c3919bb442609bd9ed0e81af6e25deb3a",
+    "upstream_bytes": 19338,
+    "verification": "Pinned GitHub blob fetched and compared on 2026-10-09; replacing CRLF by LF gives exact byte equality."
+  },
+  {
+    "path": "third_party/dymu/LICENSE",
+    "upstream_path": "LICENSE",
+    "upstream": {
+      "repository": "https://github.com/MikeWangWZHL/dymu",
+      "commit": "3770d6add8fd9b972ae611f3f3b16a552dea13cc",
+      "root_license": "MIT (preserve per-component notices)"
+    },
+    "sha256": "af2a12ff9c61e68b4c880bd1d781b5843434c76adf78eba693461a8657318209",
+    "bytes": 1252,
+    "changes": "Line endings only: archived candidate uses CRLF; pinned GitHub blob uses LF. No other byte differences. Candidate bytes are preserved.",
+    "upstream_url": "https://github.com/MikeWangWZHL/dymu/blob/3770d6add8fd9b972ae611f3f3b16a552dea13cc/LICENSE",
+    "upstream_git_blob_sha": "5bfbf6c09daad743dbf9a98d303c0402e4099a27",
+    "upstream_sha256": "4a5b4f13ea4792a8211a69f32d2b460b6d520e57cd23c6301e707c76a6e97a55",
+    "upstream_bytes": 1229,
+    "verification": "Pinned GitHub blob fetched and compared on 2026-10-09; replacing CRLF by LF gives exact byte equality."
+  },
+  {
+    "path": "third_party/ipcv/LICENSE",
+    "upstream_path": "LICENSE",
+    "upstream": {
+      "repository": "https://github.com/Perkzi/IPCV",
+      "commit": "29726f044f0f9c0c2be4eb0005888ddeb5fa188e",
+      "root_license": "Apache-2.0"
+    },
+    "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6",
+    "bytes": 11558,
+    "changes": "Line endings only: archived candidate uses CRLF; pinned GitHub blob uses LF. No other byte differences. Candidate bytes are preserved.",
+    "upstream_url": "https://github.com/Perkzi/IPCV/blob/29726f044f0f9c0c2be4eb0005888ddeb5fa188e/LICENSE",
+    "upstream_git_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+    "upstream_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "upstream_bytes": 11357,
+    "verification": "Pinned GitHub blob fetched and compared on 2026-10-09; replacing CRLF by LF gives exact byte equality."
+  },
+  {
+    "path": "third_party/pitome/algo/pitome/merge.py",
+    "upstream_path": "algo/pitome/merge.py",
+    "upstream": {
+      "repository": "https://github.com/hchautran/PiToMe",
+      "commit": "550b5deed94aadfeac28bfbe381d87e672044a40",
+      "root_license": "CC-BY-NC-4.0"
+    },
+    "sha256": "57f286663de05b1ce6a239f0db015cf745475a8c271e4ac0d214dc3e521b6145",
+    "bytes": 9812,
+    "changes": "Line endings only: archived candidate uses CRLF; pinned GitHub blob uses LF. No other byte differences. Candidate bytes are preserved.",
+    "status": "Selected noncommercial upstream reference only; not a migrated or complete installable runtime",
+    "upstream_url": "https://github.com/hchautran/PiToMe/blob/550b5deed94aadfeac28bfbe381d87e672044a40/algo/pitome/merge.py",
+    "upstream_git_blob_sha": "74cd2945c8152aba09f709a5c93c639c0ce24a4b",
+    "upstream_sha256": "135728c0e489419d25d65aba2b08fc6db1d563ffcbe7c48fe7e4c94e3f0cd8a6",
+    "upstream_bytes": 9526,
+    "verification": "Pinned GitHub blob fetched and compared on 2026-10-09; replacing CRLF by LF gives exact byte equality.",
+    "copyright_notice": "Meta Platforms, Inc. and affiliates; original source header retained"
+  },
+  {
+    "path": "third_party/pitome/algo/pitome/utils.py",
+    "upstream_path": "algo/pitome/utils.py",
+    "upstream": {
+      "repository": "https://github.com/hchautran/PiToMe",
+      "commit": "550b5deed94aadfeac28bfbe381d87e672044a40",
+      "root_license": "CC-BY-NC-4.0"
+    },
+    "sha256": "fcbe905b6e24b827c92711bf5764cb27c888acf45423498946923f09aa629b40",
+    "bytes": 3452,
+    "changes": "Line endings only: archived candidate uses CRLF; pinned GitHub blob uses LF. No other byte differences. Candidate bytes are preserved.",
+    "status": "Selected noncommercial upstream reference only; not a migrated or complete installable runtime",
+    "upstream_url": "https://github.com/hchautran/PiToMe/blob/550b5deed94aadfeac28bfbe381d87e672044a40/algo/pitome/utils.py",
+    "upstream_git_blob_sha": "10cea899bd45bb83889a5160b6d3656359af4395",
+    "upstream_sha256": "9f32a1fa06743c822f60f7d130807202b56475c2121f08850aed5a9dc9b9dfce",
+    "upstream_bytes": 3347,
+    "verification": "Pinned GitHub blob fetched and compared on 2026-10-09; replacing CRLF by LF gives exact byte equality.",
+    "copyright_notice": "Meta Platforms, Inc. and affiliates; original source header retained"
+  }
+]
