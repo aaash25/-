@@ -1,0 +1,195 @@
+[
+  {
+    "path": "migration_sources/extracted_components/onevision_shared_pitome/smol_merge_ports.py",
+    "archive_source_relative_path": "releases/onevision_formal_integration_20260930_r1/source/route/benchmarks/smolvlm_full_reproduction_20260903/migration/smol_merge_ports.py",
+    "archive_sha256": "d550750bb8a191b25bad46161f9ae3fef1131fe4ec32ed6e29601d07096cfe61",
+    "public_sha256": "7bec4c0d5b7339a379cc653ea7a8bf27af5615cb53f5e11d764ab505c8c07a92",
+    "upstream_original_sha256": null,
+    "selection_change": "entire non-authorized helper/function nodes omitted; retained algorithm and host node AST hashes identical",
+    "omitted_nodes": [
+      "illava_step"
+    ],
+    "retained_nodes": [
+      {
+        "name": "MergeStep",
+        "source_start_line": 17,
+        "source_end_line": 20,
+        "ast_sha256": "01a746c9a29d2938a81bd0cd0d5105604cb45665a8215dae11dd9229c38a4771"
+      },
+      {
+        "name": "gather_rows",
+        "source_start_line": 23,
+        "source_end_line": 24,
+        "ast_sha256": "da9fd7c107b24497ec73ed8ce510f1c66f5a6f35a26a01af2770518d5a13afc0"
+      },
+      {
+        "name": "identity_parent",
+        "source_start_line": 27,
+        "source_end_line": 28,
+        "ast_sha256": "f3cf12118ec4a0e5771888f5c0b6a799cc50e0212895eafaf826427d81f9e863"
+      },
+      {
+        "name": "_assemble",
+        "source_start_line": 31,
+        "source_end_line": 49,
+        "ast_sha256": "00665151eca2a9db79964d94b47c7ceeb4cf8eec82767de7b595e2a71afe42ec"
+      },
+      {
+        "name": "pitome_step",
+        "source_start_line": 52,
+        "source_end_line": 80,
+        "ast_sha256": "624adb3d089cfa98d13f408cc5b72467d5135380cd5dae0e62944d523fb12b31"
+      },
+      {
+        "name": "SmolMergePort",
+        "source_start_line": 113,
+        "source_end_line": 196,
+        "ast_sha256": "0a90507e6294352536f35b99dd3a44fc5dc1e5c88257744792d0734e03a36594"
+      }
+    ],
+    "runnable_complete_release": "NO; original source pins must not be substituted with this selected component"
+  },
+  {
+    "path": "migration_sources/extracted_components/qwen_r6/peer_port_core.py",
+    "archive_source_relative_path": "releases/qwen_minimal_peer_reuse_r6_20261001/source/peer_port_core.py",
+    "archive_sha256": "da30c93c4e39361df9a6f424af9cf2bcb3467c0b7fbd964cc1dbe8ff0d8e015a",
+    "public_sha256": "95bde90c23e3a77349cc84ce49c4a55fd93832c2c2d7116621406bfbdaaba5a1",
+    "upstream_original_sha256": null,
+    "selection_change": "entire non-authorized helper/function nodes omitted; retained algorithm and host node AST hashes identical",
+    "omitted_nodes": [
+      "ficoco_compress",
+      "restore_ficoco"
+    ],
+    "retained_nodes": [
+      {
+        "name": "SegmentState",
+        "source_start_line": 16,
+        "source_end_line": 22,
+        "ast_sha256": "1c1fff3e8321d2f32fd13bcb84b02aa5ef776e1a7fe62199ca4525a623cd69c3"
+      },
+      {
+        "name": "MergeResult",
+        "source_start_line": 25,
+        "source_end_line": 31,
+        "ast_sha256": "a1d4cd61570a91b0c17f814a1616ef39fe68dae5e0a3501005d8aad0b3983f09"
+      },
+      {
+        "name": "FiCoCoStep",
+        "source_start_line": 34,
+        "source_end_line": 38,
+        "ast_sha256": "dd00435d24deb17680b3cebfd04f636b9e2d903fda0451018e19307f1fb349c1"
+      },
+      {
+        "name": "make_segments",
+        "source_start_line": 41,
+        "source_end_line": 60,
+        "ast_sha256": "19cabb8a03ef69ed6e3b48d7b8fa02fec6acf8dd08a0117b98cb4afd2685d2cb"
+      },
+      {
+        "name": "concatenate",
+        "source_start_line": 63,
+        "source_end_line": 64,
+        "ast_sha256": "afcd3d460ab3754e819f2d624278d70832de001c4f223db4ea3cf08bd64f4878"
+      },
+      {
+        "name": "cu_seqlens",
+        "source_start_line": 67,
+        "source_end_line": 69,
+        "ast_sha256": "5899cf7ee444ce8906f71f8ab01e7ea3e909891eff2abef3d98bce517e1754aa"
+      },
+      {
+        "name": "gathered_positions",
+        "source_start_line": 72,
+        "source_end_line": 73,
+        "ast_sha256": "c17cfd031657ef4de0d96c9f76caf0b9100d7680715c3aad6af0a5ebeb3ee098"
+      },
+      {
+        "name": "deterministic_group_sum",
+        "source_start_line": 76,
+        "source_end_line": 107,
+        "ast_sha256": "7e772c1e1425a422ff47e46dc25ef5f5904876c36cad025b8ba9a056608041b3"
+      },
+      {
+        "name": "_assemble_mean",
+        "source_start_line": 110,
+        "source_end_line": 142,
+        "ast_sha256": "77bc20f0dcd6f8b762bde6854ddd164b8bc2849298ac920675247f919dcbc381"
+      },
+      {
+        "name": "pitome_merge",
+        "source_start_line": 145,
+        "source_end_line": 175,
+        "ast_sha256": "72d1e6e17f2556190372bffa27fab78aa52e28bffa6e10857ce1ad7962639905"
+      },
+      {
+        "name": "dtome_merge",
+        "source_start_line": 178,
+        "source_end_line": 222,
+        "ast_sha256": "3e24b986c245bde94319e33cfb2ab6be6df94d8ac45de3e9e6202bce289307f8"
+      },
+      {
+        "name": "update_state",
+        "source_start_line": 225,
+        "source_end_line": 229,
+        "ast_sha256": "39ad6f5222c8d81ffb61471bb43c01c8816cd638de3ad2abf14655fd1656e6fe"
+      },
+      {
+        "name": "restore_parent",
+        "source_start_line": 232,
+        "source_end_line": 233,
+        "ast_sha256": "4430cd83f46770909ad245eeb4a117691e95484681f4902e7cbe9f8ac5781f0d"
+      }
+    ],
+    "runnable_complete_release": "NO; original source pins must not be substituted with this selected component"
+  },
+  {
+    "path": "migration_sources/extracted_components/smol_pitome/smol_merge_ports.py",
+    "archive_source_relative_path": "route/releases/smol_existing_configuration_correction_20261001_r1/source/route/benchmarks/smolvlm_full_reproduction_20260903/migration/smol_merge_ports.py",
+    "archive_sha256": "d550750bb8a191b25bad46161f9ae3fef1131fe4ec32ed6e29601d07096cfe61",
+    "public_sha256": "7bec4c0d5b7339a379cc653ea7a8bf27af5615cb53f5e11d764ab505c8c07a92",
+    "upstream_original_sha256": null,
+    "selection_change": "entire non-authorized helper/function nodes omitted; retained algorithm and host node AST hashes identical",
+    "omitted_nodes": [
+      "illava_step"
+    ],
+    "retained_nodes": [
+      {
+        "name": "MergeStep",
+        "source_start_line": 17,
+        "source_end_line": 20,
+        "ast_sha256": "01a746c9a29d2938a81bd0cd0d5105604cb45665a8215dae11dd9229c38a4771"
+      },
+      {
+        "name": "gather_rows",
+        "source_start_line": 23,
+        "source_end_line": 24,
+        "ast_sha256": "da9fd7c107b24497ec73ed8ce510f1c66f5a6f35a26a01af2770518d5a13afc0"
+      },
+      {
+        "name": "identity_parent",
+        "source_start_line": 27,
+        "source_end_line": 28,
+        "ast_sha256": "f3cf12118ec4a0e5771888f5c0b6a799cc50e0212895eafaf826427d81f9e863"
+      },
+      {
+        "name": "_assemble",
+        "source_start_line": 31,
+        "source_end_line": 49,
+        "ast_sha256": "00665151eca2a9db79964d94b47c7ceeb4cf8eec82767de7b595e2a71afe42ec"
+      },
+      {
+        "name": "pitome_step",
+        "source_start_line": 52,
+        "source_end_line": 80,
+        "ast_sha256": "624adb3d089cfa98d13f408cc5b72467d5135380cd5dae0e62944d523fb12b31"
+      },
+      {
+        "name": "SmolMergePort",
+        "source_start_line": 113,
+        "source_end_line": 196,
+        "ast_sha256": "0a90507e6294352536f35b99dd3a44fc5dc1e5c88257744792d0734e03a36594"
+      }
+    ],
+    "runnable_complete_release": "NO; original source pins must not be substituted with this selected component"
+  }
+]

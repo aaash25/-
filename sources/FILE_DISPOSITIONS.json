@@ -1,0 +1,1529 @@
+[
+  {
+    "source_relative_path": "releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/checkpoint_journal.py",
+    "archive_sha256": "800b39ac2b301425bce8d7386a12d433c7f718a318e524dcff2c53f74e80f7c4",
+    "bytes": 8405,
+    "disposition": "PUBLIC_SOURCE_CANDIDATE",
+    "reason": "Previously withheld by a blanket mixed-method rule. Static review identifies user-project runner/bridge/kernel/metadata code; user explicitly authorizes this publication candidate. Imported or hash-loaded unlicensed iLLaVA author files are not redistributed. External/missing dependencies remain explicit.",
+    "license_basis": {
+      "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+      "potential_adapted_components": [],
+      "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+      "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+    },
+    "upstream_original_sha256": null,
+    "upstream_original_sha256_reason": "project migration file is not represented as an unchanged upstream author file",
+    "imports_static": [
+      "__future__",
+      "fcntl",
+      "json",
+      "msvcrt",
+      "os",
+      "pathlib",
+      "uuid",
+      "zlib"
+    ],
+    "private_path_cleanup": "NONE_REQUIRED_BY_STATIC_SCAN",
+    "scientific_acceptance": "NOT_ASSERTED",
+    "public_copy": {
+      "path": "migration_sources/current_archive/releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/checkpoint_journal.py",
+      "archive_sha256": "800b39ac2b301425bce8d7386a12d433c7f718a318e524dcff2c53f74e80f7c4",
+      "public_sha256": "a78c4470d0121811033a20447f6760c327e18b8e2d69c17a34ac173156f324b4",
+      "archive_source_relative_path": "releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/checkpoint_journal.py",
+      "changes": "added publication/attribution comment header; CRLF-to-LF when present; no path substitutions were needed",
+      "algorithm_ast_identity": "PASS",
+      "license_basis": {
+        "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+        "potential_adapted_components": [],
+        "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+        "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+      }
+    }
+  },
+  {
+    "source_relative_path": "releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/frozen_sources/pitome_author_fp16.py",
+    "archive_sha256": "b058fcae583b4eea2d10d477ed780aa87e08efbf34a36d2e72d34b65263d0a66",
+    "bytes": 21623,
+    "disposition": "PUBLIC_SOURCE_CANDIDATE",
+    "reason": "Previously withheld by a blanket mixed-method rule. Static review identifies user-project runner/bridge/kernel/metadata code; user explicitly authorizes this publication candidate. Imported or hash-loaded unlicensed iLLaVA author files are not redistributed. External/missing dependencies remain explicit.",
+    "license_basis": {
+      "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+      "potential_adapted_components": [
+        {
+          "method": "pitome",
+          "repository": "https://github.com/hchautran/PiToMe",
+          "commit": "550b5deed94aadfeac28bfbe381d87e672044a40",
+          "license": "CC-BY-NC-4.0 (author portions; not a replacement for HF Apache notices)"
+        }
+      ],
+      "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+      "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+    },
+    "upstream_original_sha256": null,
+    "upstream_original_sha256_reason": "project migration file is not represented as an unchanged upstream author file",
+    "imports_static": [
+      "PIL",
+      "__future__",
+      "argparse",
+      "author_pitome",
+      "base64",
+      "csv",
+      "hashlib",
+      "huggingface_hub",
+      "io",
+      "json",
+      "llava_vision_loader",
+      "os",
+      "pathlib",
+      "statistics",
+      "subprocess",
+      "sys",
+      "time",
+      "torch",
+      "traceback",
+      "transformers",
+      "zlib"
+    ],
+    "private_path_cleanup": "NONE_REQUIRED_BY_STATIC_SCAN",
+    "scientific_acceptance": "NOT_ASSERTED",
+    "public_copy": {
+      "path": "migration_sources/current_archive/releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/frozen_sources/pitome_author_fp16.py",
+      "archive_sha256": "b058fcae583b4eea2d10d477ed780aa87e08efbf34a36d2e72d34b65263d0a66",
+      "public_sha256": "c2ceac67bb379fd58f93981f15304e9e7f64dee9053c5f67d88e75923cdf1196",
+      "archive_source_relative_path": "releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/frozen_sources/pitome_author_fp16.py",
+      "changes": "added publication/attribution comment header; CRLF-to-LF when present; no path substitutions were needed",
+      "algorithm_ast_identity": "PASS",
+      "license_basis": {
+        "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+        "potential_adapted_components": [
+          {
+            "method": "pitome",
+            "repository": "https://github.com/hchautran/PiToMe",
+            "commit": "550b5deed94aadfeac28bfbe381d87e672044a40",
+            "license": "CC-BY-NC-4.0 (author portions; not a replacement for HF Apache notices)"
+          }
+        ],
+        "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+        "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+      }
+    }
+  },
+  {
+    "source_relative_path": "releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/grid.py",
+    "archive_sha256": "5e5c994a532755d288060686dfaf1e9aead1a6e15f51370c1265596cd89a4174",
+    "bytes": 2753,
+    "disposition": "PUBLIC_SOURCE_CANDIDATE",
+    "reason": "Previously withheld by a blanket mixed-method rule. Static review identifies user-project runner/bridge/kernel/metadata code; user explicitly authorizes this publication candidate. Imported or hash-loaded unlicensed iLLaVA author files are not redistributed. External/missing dependencies remain explicit.",
+    "license_basis": {
+      "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+      "potential_adapted_components": [],
+      "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+      "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+    },
+    "upstream_original_sha256": null,
+    "upstream_original_sha256_reason": "project migration file is not represented as an unchanged upstream author file",
+    "imports_static": [
+      "__future__",
+      "dataset_registry"
+    ],
+    "private_path_cleanup": "NONE_REQUIRED_BY_STATIC_SCAN",
+    "scientific_acceptance": "NOT_ASSERTED",
+    "public_copy": {
+      "path": "migration_sources/current_archive/releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/grid.py",
+      "archive_sha256": "5e5c994a532755d288060686dfaf1e9aead1a6e15f51370c1265596cd89a4174",
+      "public_sha256": "e4ad5daba437a7a677b9c04f45b3dd11f2d12c896d4c37079e4d7a326f03061f",
+      "archive_source_relative_path": "releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/grid.py",
+      "changes": "added publication/attribution comment header; CRLF-to-LF when present; no path substitutions were needed",
+      "algorithm_ast_identity": "PASS",
+      "license_basis": {
+        "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+        "potential_adapted_components": [],
+        "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+        "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+      }
+    }
+  },
+  {
+    "source_relative_path": "releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/llava_runtime.py",
+    "archive_sha256": "40f1e15d91ca7eb4780a06341675c55f0df87fb031b095c21bf7fef545d8967b",
+    "bytes": 26897,
+    "disposition": "PUBLIC_SOURCE_CANDIDATE",
+    "reason": "Previously withheld by a blanket mixed-method rule. Static review identifies user-project runner/bridge/kernel/metadata code; user explicitly authorizes this publication candidate. Imported or hash-loaded unlicensed iLLaVA author files are not redistributed. External/missing dependencies remain explicit.",
+    "license_basis": {
+      "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+      "potential_adapted_components": [
+        {
+          "method": "pitome",
+          "repository": "https://github.com/hchautran/PiToMe",
+          "commit": "550b5deed94aadfeac28bfbe381d87e672044a40",
+          "license": "CC-BY-NC-4.0 (author portions; not a replacement for HF Apache notices)"
+        },
+        {
+          "method": "dymu",
+          "repository": "https://github.com/MikeWangWZHL/dymu",
+          "commit": "3770d6add8fd9b972ae611f3f3b16a552dea13cc",
+          "license": "MIT (retain original OpenCLIP notices; nested LLaVA component Apache-2.0)"
+        },
+        {
+          "method": "ipcv",
+          "repository": "https://github.com/Perkzi/IPCV",
+          "commit": "29726f044f0f9c0c2be4eb0005888ddeb5fa188e",
+          "license": "Apache-2.0"
+        }
+      ],
+      "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+      "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+    },
+    "upstream_original_sha256": null,
+    "upstream_original_sha256_reason": "project migration file is not represented as an unchanged upstream author file",
+    "imports_static": [
+      "PIL",
+      "__future__",
+      "adapter_q_fused_eager",
+      "author_dymu_bridge",
+      "author_pitome",
+      "check_environment",
+      "clip_peer_ports",
+      "contextlib",
+      "copy",
+      "dataclasses",
+      "grid",
+      "hashlib",
+      "importlib",
+      "ipcv_clip_batch",
+      "layout",
+      "os",
+      "pack_restore_triton",
+      "pathlib",
+      "pitome_author_fp16",
+      "prompting",
+      "relation_triton",
+      "run_port_job",
+      "sys",
+      "time",
+      "torch",
+      "transformers",
+      "types"
+    ],
+    "private_path_cleanup": "NONE_REQUIRED_BY_STATIC_SCAN",
+    "scientific_acceptance": "NOT_ASSERTED",
+    "public_copy": {
+      "path": "migration_sources/current_archive/releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/llava_runtime.py",
+      "archive_sha256": "40f1e15d91ca7eb4780a06341675c55f0df87fb031b095c21bf7fef545d8967b",
+      "public_sha256": "446fdc7ad72a838e522f505b5bb2a493a4d0e920df3b294c2c6b0c82704229e3",
+      "archive_source_relative_path": "releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/llava_runtime.py",
+      "changes": "added publication/attribution comment header; CRLF-to-LF when present; no path substitutions were needed",
+      "algorithm_ast_identity": "PASS",
+      "license_basis": {
+        "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+        "potential_adapted_components": [
+          {
+            "method": "pitome",
+            "repository": "https://github.com/hchautran/PiToMe",
+            "commit": "550b5deed94aadfeac28bfbe381d87e672044a40",
+            "license": "CC-BY-NC-4.0 (author portions; not a replacement for HF Apache notices)"
+          },
+          {
+            "method": "dymu",
+            "repository": "https://github.com/MikeWangWZHL/dymu",
+            "commit": "3770d6add8fd9b972ae611f3f3b16a552dea13cc",
+            "license": "MIT (retain original OpenCLIP notices; nested LLaVA component Apache-2.0)"
+          },
+          {
+            "method": "ipcv",
+            "repository": "https://github.com/Perkzi/IPCV",
+            "commit": "29726f044f0f9c0c2be4eb0005888ddeb5fa188e",
+            "license": "Apache-2.0"
+          }
+        ],
+        "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+        "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+      }
+    }
+  },
+  {
+    "source_relative_path": "releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/prompting.py",
+    "archive_sha256": "b2e86a7a7be61726ac48c7397dff7dcfaabe68a46fa94ce5d2c03f678c016a37",
+    "bytes": 2539,
+    "disposition": "PUBLIC_SOURCE_CANDIDATE",
+    "reason": "Previously withheld by a blanket mixed-method rule. Static review identifies user-project runner/bridge/kernel/metadata code; user explicitly authorizes this publication candidate. Imported or hash-loaded unlicensed iLLaVA author files are not redistributed. External/missing dependencies remain explicit.",
+    "license_basis": {
+      "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+      "potential_adapted_components": [],
+      "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+      "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+    },
+    "upstream_original_sha256": null,
+    "upstream_original_sha256_reason": "project migration file is not represented as an unchanged upstream author file",
+    "imports_static": [
+      "__future__"
+    ],
+    "private_path_cleanup": "NONE_REQUIRED_BY_STATIC_SCAN",
+    "scientific_acceptance": "NOT_ASSERTED",
+    "public_copy": {
+      "path": "migration_sources/current_archive/releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/prompting.py",
+      "archive_sha256": "b2e86a7a7be61726ac48c7397dff7dcfaabe68a46fa94ce5d2c03f678c016a37",
+      "public_sha256": "bbb18d1e5e140df134741277bb1b478c6ade8ba4888d1ee09d8b4083368ea7bd",
+      "archive_source_relative_path": "releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/prompting.py",
+      "changes": "added publication/attribution comment header; CRLF-to-LF when present; no path substitutions were needed",
+      "algorithm_ast_identity": "PASS",
+      "license_basis": {
+        "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+        "potential_adapted_components": [],
+        "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+        "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+      }
+    }
+  },
+  {
+    "source_relative_path": "releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/run_job.py",
+    "archive_sha256": "1cee29233a3d07a78221461d3c645c38c826c0c037154e9de41d9192df4fbbd7",
+    "bytes": 18627,
+    "disposition": "PUBLIC_SOURCE_CANDIDATE",
+    "reason": "Previously withheld by a blanket mixed-method rule. Static review identifies user-project runner/bridge/kernel/metadata code; user explicitly authorizes this publication candidate. Imported or hash-loaded unlicensed iLLaVA author files are not redistributed. External/missing dependencies remain explicit.",
+    "license_basis": {
+      "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+      "potential_adapted_components": [],
+      "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+      "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+    },
+    "upstream_original_sha256": null,
+    "upstream_original_sha256_reason": "project migration file is not represented as an unchanged upstream author file",
+    "imports_static": [
+      "__future__",
+      "argparse",
+      "checkpoint_journal",
+      "fidelity_policy",
+      "grid",
+      "hashlib",
+      "json",
+      "launch_plan",
+      "llava_runtime",
+      "os",
+      "pathlib",
+      "prepare_manifests",
+      "prepare_timing",
+      "release_integrity",
+      "time",
+      "torch",
+      "traceback",
+      "uuid"
+    ],
+    "private_path_cleanup": "NONE_REQUIRED_BY_STATIC_SCAN",
+    "scientific_acceptance": "NOT_ASSERTED",
+    "public_copy": {
+      "path": "migration_sources/current_archive/releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/run_job.py",
+      "archive_sha256": "1cee29233a3d07a78221461d3c645c38c826c0c037154e9de41d9192df4fbbd7",
+      "public_sha256": "cfd3cdb9ea79592ffc19b3c5f12bcf280c958af14b06411e959dad98d921ab59",
+      "archive_source_relative_path": "releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/run_job.py",
+      "changes": "added publication/attribution comment header; CRLF-to-LF when present; no path substitutions were needed",
+      "algorithm_ast_identity": "PASS",
+      "license_basis": {
+        "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+        "potential_adapted_components": [],
+        "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+        "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+      }
+    }
+  },
+  {
+    "source_relative_path": "releases/onevision_formal_integration_20260930_r1/source/route/benchmarks/smolvlm_full_reproduction_20260903/migration/smol_merge_ports.py",
+    "archive_sha256": "d550750bb8a191b25bad46161f9ae3fef1131fe4ec32ed6e29601d07096cfe61",
+    "bytes": 9526,
+    "disposition": "EXCLUDED_FULL_FILE",
+    "reason": "Contains actual illava_step implementation at lines 84-110 together with PiToMe; full file withheld. Exact PiToMe/helper/host nodes are separately selected without rewriting their implementations.",
+    "license_basis": {
+      "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+      "potential_adapted_components": [
+        {
+          "method": "pitome",
+          "repository": "https://github.com/hchautran/PiToMe",
+          "commit": "550b5deed94aadfeac28bfbe381d87e672044a40",
+          "license": "CC-BY-NC-4.0 (author portions; not a replacement for HF Apache notices)"
+        }
+      ],
+      "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+      "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+    },
+    "upstream_original_sha256": null,
+    "upstream_original_sha256_reason": "project migration file is not represented as an unchanged upstream author file",
+    "imports_static": [
+      "__future__",
+      "dataclasses",
+      "math",
+      "torch",
+      "transformers"
+    ],
+    "private_path_cleanup": "NONE_REQUIRED_BY_STATIC_SCAN",
+    "scientific_acceptance": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/author_visual_source.py",
+    "archive_sha256": "b89b5a038671370fdf3695a029ecdbf6574ad5225fe27c9f917b72536779ec53",
+    "bytes": 11158,
+    "disposition": "PUBLIC_SOURCE_CANDIDATE",
+    "reason": "Previously withheld by a blanket mixed-method rule. Static review identifies user-project runner/bridge/kernel/metadata code; user explicitly authorizes this publication candidate. Imported or hash-loaded unlicensed iLLaVA author files are not redistributed. External/missing dependencies remain explicit.",
+    "license_basis": {
+      "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+      "potential_adapted_components": [
+        {
+          "method": "dymu",
+          "repository": "https://github.com/MikeWangWZHL/dymu",
+          "commit": "3770d6add8fd9b972ae611f3f3b16a552dea13cc",
+          "license": "MIT (retain original OpenCLIP notices; nested LLaVA component Apache-2.0)"
+        }
+      ],
+      "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+      "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+    },
+    "upstream_original_sha256": null,
+    "upstream_original_sha256_reason": "project migration file is not represented as an unchanged upstream author file",
+    "imports_static": [
+      "__future__",
+      "ast",
+      "functools",
+      "hashlib",
+      "math",
+      "pathlib",
+      "torch",
+      "types",
+      "typing"
+    ],
+    "private_path_cleanup": "NONE_REQUIRED_BY_STATIC_SCAN",
+    "scientific_acceptance": "NOT_ASSERTED",
+    "public_copy": {
+      "path": "migration_sources/current_archive/releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/author_visual_source.py",
+      "archive_sha256": "b89b5a038671370fdf3695a029ecdbf6574ad5225fe27c9f917b72536779ec53",
+      "public_sha256": "906de084c41fa87794e763b1585b0662bdc587f348c5fa2657939f4155949796",
+      "archive_source_relative_path": "releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/author_visual_source.py",
+      "changes": "added publication/attribution comment header; CRLF-to-LF when present; no path substitutions were needed",
+      "algorithm_ast_identity": "PASS",
+      "license_basis": {
+        "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+        "potential_adapted_components": [
+          {
+            "method": "dymu",
+            "repository": "https://github.com/MikeWangWZHL/dymu",
+            "commit": "3770d6add8fd9b972ae611f3f3b16a552dea13cc",
+            "license": "MIT (retain original OpenCLIP notices; nested LLaVA component Apache-2.0)"
+          }
+        ],
+        "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+        "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+      }
+    }
+  },
+  {
+    "source_relative_path": "releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/formal_fp32/checkpoint_journal.py",
+    "archive_sha256": "800b39ac2b301425bce8d7386a12d433c7f718a318e524dcff2c53f74e80f7c4",
+    "bytes": 8405,
+    "disposition": "PUBLIC_SOURCE_CANDIDATE",
+    "reason": "Previously withheld by a blanket mixed-method rule. Static review identifies user-project runner/bridge/kernel/metadata code; user explicitly authorizes this publication candidate. Imported or hash-loaded unlicensed iLLaVA author files are not redistributed. External/missing dependencies remain explicit.",
+    "license_basis": {
+      "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+      "potential_adapted_components": [],
+      "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+      "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+    },
+    "upstream_original_sha256": null,
+    "upstream_original_sha256_reason": "project migration file is not represented as an unchanged upstream author file",
+    "imports_static": [
+      "__future__",
+      "fcntl",
+      "json",
+      "msvcrt",
+      "os",
+      "pathlib",
+      "uuid",
+      "zlib"
+    ],
+    "private_path_cleanup": "NONE_REQUIRED_BY_STATIC_SCAN",
+    "scientific_acceptance": "NOT_ASSERTED",
+    "public_copy": {
+      "path": "migration_sources/current_archive/releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/formal_fp32/checkpoint_journal.py",
+      "archive_sha256": "800b39ac2b301425bce8d7386a12d433c7f718a318e524dcff2c53f74e80f7c4",
+      "public_sha256": "a78c4470d0121811033a20447f6760c327e18b8e2d69c17a34ac173156f324b4",
+      "archive_source_relative_path": "releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/formal_fp32/checkpoint_journal.py",
+      "changes": "added publication/attribution comment header; CRLF-to-LF when present; no path substitutions were needed",
+      "algorithm_ast_identity": "PASS",
+      "license_basis": {
+        "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+        "potential_adapted_components": [],
+        "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+        "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+      }
+    }
+  },
+  {
+    "source_relative_path": "releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/formal_fp32/grid.py",
+    "archive_sha256": "ca60f630aacd8b1eb0d1f27f7e7a8281a955223e2c744e2ead29ad92907cd4f8",
+    "bytes": 2500,
+    "disposition": "PUBLIC_SOURCE_CANDIDATE",
+    "reason": "Previously withheld by a blanket mixed-method rule. Static review identifies user-project runner/bridge/kernel/metadata code; user explicitly authorizes this publication candidate. Imported or hash-loaded unlicensed iLLaVA author files are not redistributed. External/missing dependencies remain explicit.",
+    "license_basis": {
+      "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+      "potential_adapted_components": [],
+      "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+      "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+    },
+    "upstream_original_sha256": null,
+    "upstream_original_sha256_reason": "project migration file is not represented as an unchanged upstream author file",
+    "imports_static": [
+      "dataset_registry"
+    ],
+    "private_path_cleanup": "NONE_REQUIRED_BY_STATIC_SCAN",
+    "scientific_acceptance": "NOT_ASSERTED",
+    "public_copy": {
+      "path": "migration_sources/current_archive/releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/formal_fp32/grid.py",
+      "archive_sha256": "ca60f630aacd8b1eb0d1f27f7e7a8281a955223e2c744e2ead29ad92907cd4f8",
+      "public_sha256": "57ab52cc7c1962d1c72375e948e4ec5d28fdc133b8d34e32a080f98c9fb01cae",
+      "archive_source_relative_path": "releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/formal_fp32/grid.py",
+      "changes": "added publication/attribution comment header; CRLF-to-LF when present; no path substitutions were needed",
+      "algorithm_ast_identity": "PASS",
+      "license_basis": {
+        "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+        "potential_adapted_components": [],
+        "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+        "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+      }
+    }
+  },
+  {
+    "source_relative_path": "releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/formal_fp32/onevision_runtime.py",
+    "archive_sha256": "3aba8bdf4fa68f76c8888a9d6e3e14e49c1aa7870ca0cf6b77f183b5d2d3e6fe",
+    "bytes": 12011,
+    "disposition": "PUBLIC_SOURCE_CANDIDATE",
+    "reason": "Previously withheld by a blanket mixed-method rule. Static review identifies user-project runner/bridge/kernel/metadata code; user explicitly authorizes this publication candidate. Imported or hash-loaded unlicensed iLLaVA author files are not redistributed. External/missing dependencies remain explicit.",
+    "license_basis": {
+      "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+      "potential_adapted_components": [
+        {
+          "method": "pitome",
+          "repository": "https://github.com/hchautran/PiToMe",
+          "commit": "550b5deed94aadfeac28bfbe381d87e672044a40",
+          "license": "CC-BY-NC-4.0 (author portions; not a replacement for HF Apache notices)"
+        },
+        {
+          "method": "dymu",
+          "repository": "https://github.com/MikeWangWZHL/dymu",
+          "commit": "3770d6add8fd9b972ae611f3f3b16a552dea13cc",
+          "license": "MIT (retain original OpenCLIP notices; nested LLaVA component Apache-2.0)"
+        },
+        {
+          "method": "ipcv",
+          "repository": "https://github.com/Perkzi/IPCV",
+          "commit": "29726f044f0f9c0c2be4eb0005888ddeb5fa188e",
+          "license": "Apache-2.0"
+        }
+      ],
+      "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+      "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+    },
+    "upstream_original_sha256": null,
+    "upstream_original_sha256_reason": "project migration file is not represented as an unchanged upstream author file",
+    "imports_static": [
+      "PIL",
+      "__future__",
+      "contextlib",
+      "dataclasses",
+      "grid",
+      "hashlib",
+      "importlib",
+      "json",
+      "onevision_ports",
+      "pathlib",
+      "precision_gate_rope_r1",
+      "sys",
+      "time",
+      "torch",
+      "transformers"
+    ],
+    "private_path_cleanup": "NONE_REQUIRED_BY_STATIC_SCAN",
+    "scientific_acceptance": "NOT_ASSERTED",
+    "public_copy": {
+      "path": "migration_sources/current_archive/releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/formal_fp32/onevision_runtime.py",
+      "archive_sha256": "3aba8bdf4fa68f76c8888a9d6e3e14e49c1aa7870ca0cf6b77f183b5d2d3e6fe",
+      "public_sha256": "4e275e15ca0c1e0028526657cd31ce635a624d6d98043415d2252a4bc8db8cfc",
+      "archive_source_relative_path": "releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/formal_fp32/onevision_runtime.py",
+      "changes": "added publication/attribution comment header; CRLF-to-LF when present; no path substitutions were needed",
+      "algorithm_ast_identity": "PASS",
+      "license_basis": {
+        "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+        "potential_adapted_components": [
+          {
+            "method": "pitome",
+            "repository": "https://github.com/hchautran/PiToMe",
+            "commit": "550b5deed94aadfeac28bfbe381d87e672044a40",
+            "license": "CC-BY-NC-4.0 (author portions; not a replacement for HF Apache notices)"
+          },
+          {
+            "method": "dymu",
+            "repository": "https://github.com/MikeWangWZHL/dymu",
+            "commit": "3770d6add8fd9b972ae611f3f3b16a552dea13cc",
+            "license": "MIT (retain original OpenCLIP notices; nested LLaVA component Apache-2.0)"
+          },
+          {
+            "method": "ipcv",
+            "repository": "https://github.com/Perkzi/IPCV",
+            "commit": "29726f044f0f9c0c2be4eb0005888ddeb5fa188e",
+            "license": "Apache-2.0"
+          }
+        ],
+        "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+        "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+      }
+    }
+  },
+  {
+    "source_relative_path": "releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/formal_fp32/run_job.py",
+    "archive_sha256": "575953f3c626755169520c9789e6df1fd173ff258b8f3b7fb691735f922e25b7",
+    "bytes": 18105,
+    "disposition": "PUBLIC_SOURCE_CANDIDATE",
+    "reason": "Previously withheld by a blanket mixed-method rule. Static review identifies user-project runner/bridge/kernel/metadata code; user explicitly authorizes this publication candidate. Imported or hash-loaded unlicensed iLLaVA author files are not redistributed. External/missing dependencies remain explicit.",
+    "license_basis": {
+      "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+      "potential_adapted_components": [],
+      "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+      "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+    },
+    "upstream_original_sha256": null,
+    "upstream_original_sha256_reason": "project migration file is not represented as an unchanged upstream author file",
+    "imports_static": [
+      "__future__",
+      "argparse",
+      "checkpoint_journal",
+      "grid",
+      "hashlib",
+      "json",
+      "onevision_runtime",
+      "os",
+      "pathlib",
+      "prepare_manifests",
+      "prepare_timing",
+      "release_integrity",
+      "time",
+      "torch",
+      "traceback",
+      "uuid"
+    ],
+    "private_path_cleanup": "NONE_REQUIRED_BY_STATIC_SCAN",
+    "scientific_acceptance": "NOT_ASSERTED",
+    "public_copy": {
+      "path": "migration_sources/current_archive/releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/formal_fp32/run_job.py",
+      "archive_sha256": "575953f3c626755169520c9789e6df1fd173ff258b8f3b7fb691735f922e25b7",
+      "public_sha256": "0fca3d69e307f8ada70b924bef04a5e21ac42611c1d980b17a96ce55e02130b5",
+      "archive_source_relative_path": "releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/formal_fp32/run_job.py",
+      "changes": "added publication/attribution comment header; CRLF-to-LF when present; no path substitutions were needed",
+      "algorithm_ast_identity": "PASS",
+      "license_basis": {
+        "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+        "potential_adapted_components": [],
+        "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+        "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+      }
+    }
+  },
+  {
+    "source_relative_path": "releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/frozen_fp32_recipe/common.py",
+    "archive_sha256": "85447517ecf1e59df2a715ec93777f3320a7534ee6f7b258cbc1d63e4039f4c8",
+    "bytes": 6877,
+    "disposition": "PUBLIC_SOURCE_CANDIDATE",
+    "reason": "Previously withheld by a blanket mixed-method rule. Static review identifies user-project runner/bridge/kernel/metadata code; user explicitly authorizes this publication candidate. Imported or hash-loaded unlicensed iLLaVA author files are not redistributed. External/missing dependencies remain explicit.",
+    "license_basis": {
+      "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+      "potential_adapted_components": [],
+      "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+      "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+    },
+    "upstream_original_sha256": null,
+    "upstream_original_sha256_reason": "project migration file is not represented as an unchanged upstream author file",
+    "imports_static": [
+      "__future__",
+      "convert_original",
+      "hashlib",
+      "inspect_weights",
+      "json",
+      "pathlib"
+    ],
+    "private_path_cleanup": "NONE_REQUIRED_BY_STATIC_SCAN",
+    "scientific_acceptance": "NOT_ASSERTED",
+    "public_copy": {
+      "path": "migration_sources/current_archive/releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/frozen_fp32_recipe/common.py",
+      "archive_sha256": "85447517ecf1e59df2a715ec93777f3320a7534ee6f7b258cbc1d63e4039f4c8",
+      "public_sha256": "6268b9bcdd555d48290203af0351274208789cd6ff2b96409f14c517af2ad65f",
+      "archive_source_relative_path": "releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/frozen_fp32_recipe/common.py",
+      "changes": "added publication/attribution comment header; CRLF-to-LF when present; no path substitutions were needed",
+      "algorithm_ast_identity": "PASS",
+      "license_basis": {
+        "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+        "potential_adapted_components": [],
+        "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+        "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+      }
+    }
+  },
+  {
+    "source_relative_path": "releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/onevision_ports.py",
+    "archive_sha256": "04f8a026a173557bc27bcd377df8652d4accb45b0f0e9559c5bf9eb1b98661d7",
+    "bytes": 11221,
+    "disposition": "PUBLIC_SOURCE_CANDIDATE",
+    "reason": "Previously withheld by a blanket mixed-method rule. Static review identifies user-project runner/bridge/kernel/metadata code; user explicitly authorizes this publication candidate. Imported or hash-loaded unlicensed iLLaVA author files are not redistributed. External/missing dependencies remain explicit.",
+    "license_basis": {
+      "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+      "potential_adapted_components": [
+        {
+          "method": "pitome",
+          "repository": "https://github.com/hchautran/PiToMe",
+          "commit": "550b5deed94aadfeac28bfbe381d87e672044a40",
+          "license": "CC-BY-NC-4.0 (author portions; not a replacement for HF Apache notices)"
+        },
+        {
+          "method": "dymu",
+          "repository": "https://github.com/MikeWangWZHL/dymu",
+          "commit": "3770d6add8fd9b972ae611f3f3b16a552dea13cc",
+          "license": "MIT (retain original OpenCLIP notices; nested LLaVA component Apache-2.0)"
+        },
+        {
+          "method": "ipcv",
+          "repository": "https://github.com/Perkzi/IPCV",
+          "commit": "29726f044f0f9c0c2be4eb0005888ddeb5fa188e",
+          "license": "Apache-2.0"
+        }
+      ],
+      "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+      "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+    },
+    "upstream_original_sha256": null,
+    "upstream_original_sha256_reason": "project migration file is not represented as an unchanged upstream author file",
+    "imports_static": [
+      "__future__",
+      "author_dtome_bridge",
+      "author_illava_bridge",
+      "author_visual_source",
+      "contextlib",
+      "global_ipcv_port",
+      "hashlib",
+      "pathlib",
+      "peer_common",
+      "smol_merge_ports",
+      "sys",
+      "torch",
+      "transformers"
+    ],
+    "private_path_cleanup": "NONE_REQUIRED_BY_STATIC_SCAN",
+    "scientific_acceptance": "NOT_ASSERTED",
+    "public_copy": {
+      "path": "migration_sources/current_archive/releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/onevision_ports.py",
+      "archive_sha256": "04f8a026a173557bc27bcd377df8652d4accb45b0f0e9559c5bf9eb1b98661d7",
+      "public_sha256": "50419aa475c48d4a51e1015264164a94d9f409d77c45183e09cca235583f09fb",
+      "archive_source_relative_path": "releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/onevision_ports.py",
+      "changes": "added publication/attribution comment header; CRLF-to-LF when present; no path substitutions were needed",
+      "algorithm_ast_identity": "PASS",
+      "license_basis": {
+        "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+        "potential_adapted_components": [
+          {
+            "method": "pitome",
+            "repository": "https://github.com/hchautran/PiToMe",
+            "commit": "550b5deed94aadfeac28bfbe381d87e672044a40",
+            "license": "CC-BY-NC-4.0 (author portions; not a replacement for HF Apache notices)"
+          },
+          {
+            "method": "dymu",
+            "repository": "https://github.com/MikeWangWZHL/dymu",
+            "commit": "3770d6add8fd9b972ae611f3f3b16a552dea13cc",
+            "license": "MIT (retain original OpenCLIP notices; nested LLaVA component Apache-2.0)"
+          },
+          {
+            "method": "ipcv",
+            "repository": "https://github.com/Perkzi/IPCV",
+            "commit": "29726f044f0f9c0c2be4eb0005888ddeb5fa188e",
+            "license": "Apache-2.0"
+          }
+        ],
+        "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+        "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+      }
+    }
+  },
+  {
+    "source_relative_path": "releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/precision_gate_rope_r1.py",
+    "archive_sha256": "567de6618163d78ee1f82787e6af9f81b76cd6f121586978c8a9165d3e52ed06",
+    "bytes": 2278,
+    "disposition": "PUBLIC_SOURCE_CANDIDATE",
+    "reason": "Previously withheld by a blanket mixed-method rule. Static review identifies user-project runner/bridge/kernel/metadata code; user explicitly authorizes this publication candidate. Imported or hash-loaded unlicensed iLLaVA author files are not redistributed. External/missing dependencies remain explicit.",
+    "license_basis": {
+      "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+      "potential_adapted_components": [],
+      "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+      "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+    },
+    "upstream_original_sha256": null,
+    "upstream_original_sha256_reason": "project migration file is not represented as an unchanged upstream author file",
+    "imports_static": [],
+    "private_path_cleanup": "NONE_REQUIRED_BY_STATIC_SCAN",
+    "scientific_acceptance": "NOT_ASSERTED",
+    "public_copy": {
+      "path": "migration_sources/current_archive/releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/precision_gate_rope_r1.py",
+      "archive_sha256": "567de6618163d78ee1f82787e6af9f81b76cd6f121586978c8a9165d3e52ed06",
+      "public_sha256": "8803c0b01b6fe68443fe0362b94ccb4af62761b220634526418cf2c4571c0ff1",
+      "archive_source_relative_path": "releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/precision_gate_rope_r1.py",
+      "changes": "added publication/attribution comment header; CRLF-to-LF when present; no path substitutions were needed",
+      "algorithm_ast_identity": "PASS",
+      "license_basis": {
+        "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+        "potential_adapted_components": [],
+        "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+        "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+      }
+    }
+  },
+  {
+    "source_relative_path": "releases/qwen_minimal_peer_reuse_r6_20261001/source/checkpoint_journal.py",
+    "archive_sha256": "800b39ac2b301425bce8d7386a12d433c7f718a318e524dcff2c53f74e80f7c4",
+    "bytes": 8405,
+    "disposition": "PUBLIC_SOURCE_CANDIDATE",
+    "reason": "Previously withheld by a blanket mixed-method rule. Static review identifies user-project runner/bridge/kernel/metadata code; user explicitly authorizes this publication candidate. Imported or hash-loaded unlicensed iLLaVA author files are not redistributed. External/missing dependencies remain explicit.",
+    "license_basis": {
+      "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+      "potential_adapted_components": [],
+      "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+      "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+    },
+    "upstream_original_sha256": null,
+    "upstream_original_sha256_reason": "project migration file is not represented as an unchanged upstream author file",
+    "imports_static": [
+      "__future__",
+      "fcntl",
+      "json",
+      "msvcrt",
+      "os",
+      "pathlib",
+      "uuid",
+      "zlib"
+    ],
+    "private_path_cleanup": "NONE_REQUIRED_BY_STATIC_SCAN",
+    "scientific_acceptance": "NOT_ASSERTED",
+    "public_copy": {
+      "path": "migration_sources/current_archive/releases/qwen_minimal_peer_reuse_r6_20261001/source/checkpoint_journal.py",
+      "archive_sha256": "800b39ac2b301425bce8d7386a12d433c7f718a318e524dcff2c53f74e80f7c4",
+      "public_sha256": "a78c4470d0121811033a20447f6760c327e18b8e2d69c17a34ac173156f324b4",
+      "archive_source_relative_path": "releases/qwen_minimal_peer_reuse_r6_20261001/source/checkpoint_journal.py",
+      "changes": "added publication/attribution comment header; CRLF-to-LF when present; no path substitutions were needed",
+      "algorithm_ast_identity": "PASS",
+      "license_basis": {
+        "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+        "potential_adapted_components": [],
+        "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+        "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+      }
+    }
+  },
+  {
+    "source_relative_path": "releases/qwen_minimal_peer_reuse_r6_20261001/source/dataset_registry.py",
+    "archive_sha256": "d0f59dd361f7e63a9848d0e596dc5a3aef2540d568e40b900f41b3e31a8a7f12",
+    "bytes": 4147,
+    "disposition": "PUBLIC_SOURCE_CANDIDATE",
+    "reason": "Previously withheld by a blanket mixed-method rule. Static review identifies user-project runner/bridge/kernel/metadata code; user explicitly authorizes this publication candidate. Imported or hash-loaded unlicensed iLLaVA author files are not redistributed. External/missing dependencies remain explicit.",
+    "license_basis": {
+      "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+      "potential_adapted_components": [],
+      "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+      "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+    },
+    "upstream_original_sha256": null,
+    "upstream_original_sha256_reason": "project migration file is not represented as an unchanged upstream author file",
+    "imports_static": [
+      "__future__",
+      "dataclasses"
+    ],
+    "private_path_cleanup": "NONE_REQUIRED_BY_STATIC_SCAN",
+    "scientific_acceptance": "NOT_ASSERTED",
+    "public_copy": {
+      "path": "migration_sources/current_archive/releases/qwen_minimal_peer_reuse_r6_20261001/source/dataset_registry.py",
+      "archive_sha256": "d0f59dd361f7e63a9848d0e596dc5a3aef2540d568e40b900f41b3e31a8a7f12",
+      "public_sha256": "40c543f8ef99bc04deae014756fc6ce83227188ce1ac491238fee6389fe0a367",
+      "archive_source_relative_path": "releases/qwen_minimal_peer_reuse_r6_20261001/source/dataset_registry.py",
+      "changes": "added publication/attribution comment header; CRLF-to-LF when present; no path substitutions were needed",
+      "algorithm_ast_identity": "PASS",
+      "license_basis": {
+        "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+        "potential_adapted_components": [],
+        "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+        "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+      }
+    }
+  },
+  {
+    "source_relative_path": "releases/qwen_minimal_peer_reuse_r6_20261001/source/fp16_eager_stability.py",
+    "archive_sha256": "a9e544e5537eeccae54dcc6be398f3f2571c5a39cb45de9e052d1c0339a4faaf",
+    "bytes": 3875,
+    "disposition": "PUBLIC_SOURCE_CANDIDATE",
+    "reason": "Previously withheld by a blanket mixed-method rule. Static review identifies user-project runner/bridge/kernel/metadata code; user explicitly authorizes this publication candidate. Imported or hash-loaded unlicensed iLLaVA author files are not redistributed. External/missing dependencies remain explicit.",
+    "license_basis": {
+      "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+      "potential_adapted_components": [],
+      "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+      "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+    },
+    "upstream_original_sha256": null,
+    "upstream_original_sha256_reason": "project migration file is not represented as an unchanged upstream author file",
+    "imports_static": [
+      "__future__",
+      "hashlib",
+      "pathlib",
+      "torch",
+      "transformers"
+    ],
+    "private_path_cleanup": "NONE_REQUIRED_BY_STATIC_SCAN",
+    "scientific_acceptance": "NOT_ASSERTED",
+    "public_copy": {
+      "path": "migration_sources/current_archive/releases/qwen_minimal_peer_reuse_r6_20261001/source/fp16_eager_stability.py",
+      "archive_sha256": "a9e544e5537eeccae54dcc6be398f3f2571c5a39cb45de9e052d1c0339a4faaf",
+      "public_sha256": "fa35fc86b16d1226227d27a690a24157f18e67d8795d41e9669fdb9e60f10f48",
+      "archive_source_relative_path": "releases/qwen_minimal_peer_reuse_r6_20261001/source/fp16_eager_stability.py",
+      "changes": "added publication/attribution comment header; CRLF-to-LF when present; no path substitutions were needed",
+      "algorithm_ast_identity": "PASS",
+      "license_basis": {
+        "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+        "potential_adapted_components": [],
+        "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+        "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+      }
+    }
+  },
+  {
+    "source_relative_path": "releases/qwen_minimal_peer_reuse_r6_20261001/source/grid.py",
+    "archive_sha256": "17049a8cdc5cab7a6e8fe36462a7eb3992a7641091aa756eec4710e3b1585d6f",
+    "bytes": 3907,
+    "disposition": "PUBLIC_SOURCE_CANDIDATE",
+    "reason": "Previously withheld by a blanket mixed-method rule. Static review identifies user-project runner/bridge/kernel/metadata code; user explicitly authorizes this publication candidate. Imported or hash-loaded unlicensed iLLaVA author files are not redistributed. External/missing dependencies remain explicit.",
+    "license_basis": {
+      "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+      "potential_adapted_components": [],
+      "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+      "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+    },
+    "upstream_original_sha256": null,
+    "upstream_original_sha256_reason": "project migration file is not represented as an unchanged upstream author file",
+    "imports_static": [
+      "__future__",
+      "dataset_registry"
+    ],
+    "private_path_cleanup": "NONE_REQUIRED_BY_STATIC_SCAN",
+    "scientific_acceptance": "NOT_ASSERTED",
+    "public_copy": {
+      "path": "migration_sources/current_archive/releases/qwen_minimal_peer_reuse_r6_20261001/source/grid.py",
+      "archive_sha256": "17049a8cdc5cab7a6e8fe36462a7eb3992a7641091aa756eec4710e3b1585d6f",
+      "public_sha256": "9273b19b110f42c078ccb34fca6cedead28b2ef993080af9843661ca2ef9fa85",
+      "archive_source_relative_path": "releases/qwen_minimal_peer_reuse_r6_20261001/source/grid.py",
+      "changes": "added publication/attribution comment header; CRLF-to-LF when present; no path substitutions were needed",
+      "algorithm_ast_identity": "PASS",
+      "license_basis": {
+        "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+        "potential_adapted_components": [],
+        "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+        "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+      }
+    }
+  },
+  {
+    "source_relative_path": "releases/qwen_minimal_peer_reuse_r6_20261001/source/illava_multi_image_adapter.py",
+    "archive_sha256": "eea90eb9c33a0fcdd213ec683dff8fee74797ca4d2db41fe818dfb92b768dd6a",
+    "bytes": 21039,
+    "disposition": "EXCLUDED_FULL_FILE",
+    "reason": "Direct iLLaVA-specific adapter/author AST binding; method root redistribution license is MISSING. Keep exact original in private audit only.",
+    "license_basis": {
+      "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+      "potential_adapted_components": [],
+      "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+      "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+    },
+    "upstream_original_sha256": null,
+    "upstream_original_sha256_reason": "project migration file is not represented as an unchanged upstream author file",
+    "imports_static": [
+      "__future__",
+      "hashlib",
+      "math",
+      "torch",
+      "transformers",
+      "typing"
+    ],
+    "private_path_cleanup": "NONE_REQUIRED_BY_STATIC_SCAN",
+    "scientific_acceptance": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "releases/qwen_minimal_peer_reuse_r6_20261001/source/illava_native_adapter.py",
+    "archive_sha256": "0030c924eb914d3247b6378eb0f320983c68a1555267320f246a27168cc346fd",
+    "bytes": 15056,
+    "disposition": "EXCLUDED_FULL_FILE",
+    "reason": "Direct iLLaVA-specific adapter/author AST binding; method root redistribution license is MISSING. Keep exact original in private audit only.",
+    "license_basis": {
+      "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+      "potential_adapted_components": [],
+      "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+      "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+    },
+    "upstream_original_sha256": null,
+    "upstream_original_sha256_reason": "project migration file is not represented as an unchanged upstream author file",
+    "imports_static": [
+      "__future__",
+      "hashlib",
+      "illava_native_source",
+      "torch",
+      "transformers",
+      "typing"
+    ],
+    "private_path_cleanup": "NONE_REQUIRED_BY_STATIC_SCAN",
+    "scientific_acceptance": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "releases/qwen_minimal_peer_reuse_r6_20261001/source/illava_native_source.py",
+    "archive_sha256": "8faab30586ee77a62dde447ce601e541930ec74945970de79587f723d735b15b",
+    "bytes": 6286,
+    "disposition": "EXCLUDED_FULL_FILE",
+    "reason": "Direct iLLaVA-specific adapter/author AST binding; method root redistribution license is MISSING. Keep exact original in private audit only.",
+    "license_basis": {
+      "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+      "potential_adapted_components": [],
+      "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+      "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+    },
+    "upstream_original_sha256": null,
+    "upstream_original_sha256_reason": "project migration file is not represented as an unchanged upstream author file",
+    "imports_static": [
+      "__future__",
+      "ast",
+      "copy",
+      "hashlib",
+      "math",
+      "pathlib",
+      "torch",
+      "types"
+    ],
+    "private_path_cleanup": "NONE_REQUIRED_BY_STATIC_SCAN",
+    "scientific_acceptance": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "releases/qwen_minimal_peer_reuse_r6_20261001/source/method_runtime.py",
+    "archive_sha256": "b010eabb6d3f956dbf94eb1dc5afd7d63f7d7a90040d4dd119686f90c661c25a",
+    "bytes": 20305,
+    "disposition": "PUBLIC_SOURCE_CANDIDATE",
+    "reason": "Previously withheld by a blanket mixed-method rule. Static review identifies user-project runner/bridge/kernel/metadata code; user explicitly authorizes this publication candidate. Imported or hash-loaded unlicensed iLLaVA author files are not redistributed. External/missing dependencies remain explicit.",
+    "license_basis": {
+      "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+      "potential_adapted_components": [
+        {
+          "method": "pitome",
+          "repository": "https://github.com/hchautran/PiToMe",
+          "commit": "550b5deed94aadfeac28bfbe381d87e672044a40",
+          "license": "CC-BY-NC-4.0 (author portions; not a replacement for HF Apache notices)"
+        },
+        {
+          "method": "dymu",
+          "repository": "https://github.com/MikeWangWZHL/dymu",
+          "commit": "3770d6add8fd9b972ae611f3f3b16a552dea13cc",
+          "license": "MIT (retain original OpenCLIP notices; nested LLaVA component Apache-2.0)"
+        },
+        {
+          "method": "ipcv",
+          "repository": "https://github.com/Perkzi/IPCV",
+          "commit": "29726f044f0f9c0c2be4eb0005888ddeb5fa188e",
+          "license": "Apache-2.0"
+        }
+      ],
+      "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+      "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+    },
+    "upstream_original_sha256": null,
+    "upstream_original_sha256_reason": "project migration file is not represented as an unchanged upstream author file",
+    "imports_static": [
+      "Qwen2VL_IPCV",
+      "__future__",
+      "contextlib",
+      "dataclasses",
+      "fp16_eager_stability",
+      "grid",
+      "h259_bridge",
+      "hashlib",
+      "illava_native_adapter",
+      "illava_qwen2vl_adapter",
+      "importlib",
+      "pathlib",
+      "qwen_peer_ports",
+      "sys",
+      "torch",
+      "transformers"
+    ],
+    "private_path_cleanup": "NONE_REQUIRED_BY_STATIC_SCAN",
+    "scientific_acceptance": "NOT_ASSERTED",
+    "public_copy": {
+      "path": "migration_sources/current_archive/releases/qwen_minimal_peer_reuse_r6_20261001/source/method_runtime.py",
+      "archive_sha256": "b010eabb6d3f956dbf94eb1dc5afd7d63f7d7a90040d4dd119686f90c661c25a",
+      "public_sha256": "60ef6c9c8a3a0a6fbdc150aa8326ab5c45650b8364a8b639986ff3305564c861",
+      "archive_source_relative_path": "releases/qwen_minimal_peer_reuse_r6_20261001/source/method_runtime.py",
+      "changes": "added publication/attribution comment header; CRLF-to-LF when present; no path substitutions were needed",
+      "algorithm_ast_identity": "PASS",
+      "license_basis": {
+        "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+        "potential_adapted_components": [
+          {
+            "method": "pitome",
+            "repository": "https://github.com/hchautran/PiToMe",
+            "commit": "550b5deed94aadfeac28bfbe381d87e672044a40",
+            "license": "CC-BY-NC-4.0 (author portions; not a replacement for HF Apache notices)"
+          },
+          {
+            "method": "dymu",
+            "repository": "https://github.com/MikeWangWZHL/dymu",
+            "commit": "3770d6add8fd9b972ae611f3f3b16a552dea13cc",
+            "license": "MIT (retain original OpenCLIP notices; nested LLaVA component Apache-2.0)"
+          },
+          {
+            "method": "ipcv",
+            "repository": "https://github.com/Perkzi/IPCV",
+            "commit": "29726f044f0f9c0c2be4eb0005888ddeb5fa188e",
+            "license": "Apache-2.0"
+          }
+        ],
+        "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+        "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+      }
+    }
+  },
+  {
+    "source_relative_path": "releases/qwen_minimal_peer_reuse_r6_20261001/source/peer_port_core.py",
+    "archive_sha256": "da30c93c4e39361df9a6f424af9cf2bcb3467c0b7fbd964cc1dbe8ff0d8e015a",
+    "bytes": 13755,
+    "disposition": "EXCLUDED_FULL_FILE",
+    "reason": "Contains an additional FiCoCo algorithm outside the four-method release scope; full-module component provenance not established here. Exact PiToMe/DToMe/segmentation/restore nodes are separately selected unchanged.",
+    "license_basis": {
+      "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+      "potential_adapted_components": [
+        {
+          "method": "pitome",
+          "repository": "https://github.com/hchautran/PiToMe",
+          "commit": "550b5deed94aadfeac28bfbe381d87e672044a40",
+          "license": "CC-BY-NC-4.0 (author portions; not a replacement for HF Apache notices)"
+        },
+        {
+          "method": "dymu",
+          "repository": "https://github.com/MikeWangWZHL/dymu",
+          "commit": "3770d6add8fd9b972ae611f3f3b16a552dea13cc",
+          "license": "MIT (retain original OpenCLIP notices; nested LLaVA component Apache-2.0)"
+        }
+      ],
+      "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+      "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+    },
+    "upstream_original_sha256": null,
+    "upstream_original_sha256_reason": "project migration file is not represented as an unchanged upstream author file",
+    "imports_static": [
+      "__future__",
+      "dataclasses",
+      "math",
+      "torch"
+    ],
+    "private_path_cleanup": "NONE_REQUIRED_BY_STATIC_SCAN",
+    "scientific_acceptance": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "releases/qwen_minimal_peer_reuse_r6_20261001/source/qwen_peer_ports.py",
+    "archive_sha256": "5a7c830b88f6a8b8573c3ce368cae8036fb773bd6e4795c17015f214b63ef467",
+    "bytes": 11877,
+    "disposition": "PUBLIC_SOURCE_CANDIDATE",
+    "reason": "Previously withheld by a blanket mixed-method rule. Static review identifies user-project runner/bridge/kernel/metadata code; user explicitly authorizes this publication candidate. Imported or hash-loaded unlicensed iLLaVA author files are not redistributed. External/missing dependencies remain explicit.",
+    "license_basis": {
+      "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+      "potential_adapted_components": [
+        {
+          "method": "pitome",
+          "repository": "https://github.com/hchautran/PiToMe",
+          "commit": "550b5deed94aadfeac28bfbe381d87e672044a40",
+          "license": "CC-BY-NC-4.0 (author portions; not a replacement for HF Apache notices)"
+        },
+        {
+          "method": "dymu",
+          "repository": "https://github.com/MikeWangWZHL/dymu",
+          "commit": "3770d6add8fd9b972ae611f3f3b16a552dea13cc",
+          "license": "MIT (retain original OpenCLIP notices; nested LLaVA component Apache-2.0)"
+        }
+      ],
+      "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+      "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+    },
+    "upstream_original_sha256": null,
+    "upstream_original_sha256_reason": "project migration file is not represented as an unchanged upstream author file",
+    "imports_static": [
+      "__future__",
+      "dataclasses",
+      "hashlib",
+      "importlib",
+      "math",
+      "peer_port_core",
+      "torch"
+    ],
+    "private_path_cleanup": "NONE_REQUIRED_BY_STATIC_SCAN",
+    "scientific_acceptance": "NOT_ASSERTED",
+    "public_copy": {
+      "path": "migration_sources/current_archive/releases/qwen_minimal_peer_reuse_r6_20261001/source/qwen_peer_ports.py",
+      "archive_sha256": "5a7c830b88f6a8b8573c3ce368cae8036fb773bd6e4795c17015f214b63ef467",
+      "public_sha256": "aed808b1ee93133231360111862098651d3839f532731205c619e05552efb1de",
+      "archive_source_relative_path": "releases/qwen_minimal_peer_reuse_r6_20261001/source/qwen_peer_ports.py",
+      "changes": "added publication/attribution comment header; CRLF-to-LF when present; no path substitutions were needed",
+      "algorithm_ast_identity": "PASS",
+      "license_basis": {
+        "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+        "potential_adapted_components": [
+          {
+            "method": "pitome",
+            "repository": "https://github.com/hchautran/PiToMe",
+            "commit": "550b5deed94aadfeac28bfbe381d87e672044a40",
+            "license": "CC-BY-NC-4.0 (author portions; not a replacement for HF Apache notices)"
+          },
+          {
+            "method": "dymu",
+            "repository": "https://github.com/MikeWangWZHL/dymu",
+            "commit": "3770d6add8fd9b972ae611f3f3b16a552dea13cc",
+            "license": "MIT (retain original OpenCLIP notices; nested LLaVA component Apache-2.0)"
+          }
+        ],
+        "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+        "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+      }
+    }
+  },
+  {
+    "source_relative_path": "releases/qwen_minimal_peer_reuse_r6_20261001/source/run_job.py",
+    "archive_sha256": "bb6e18d1d9f11aa941f554dd929054765af50fd1821a19631387d5c878a4f104",
+    "bytes": 31113,
+    "disposition": "PUBLIC_SOURCE_CANDIDATE",
+    "reason": "Previously withheld by a blanket mixed-method rule. Static review identifies user-project runner/bridge/kernel/metadata code; user explicitly authorizes this publication candidate. Imported or hash-loaded unlicensed iLLaVA author files are not redistributed. External/missing dependencies remain explicit.",
+    "license_basis": {
+      "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+      "potential_adapted_components": [],
+      "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+      "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+    },
+    "upstream_original_sha256": null,
+    "upstream_original_sha256_reason": "project migration file is not represented as an unchanged upstream author file",
+    "imports_static": [
+      "PIL",
+      "__future__",
+      "argparse",
+      "checkpoint_journal",
+      "collections",
+      "contextlib",
+      "grid",
+      "hashlib",
+      "json",
+      "method_runtime",
+      "os",
+      "pathlib",
+      "prepare_manifests",
+      "statistics",
+      "time",
+      "torch",
+      "traceback",
+      "uuid"
+    ],
+    "private_path_cleanup": "NONE_REQUIRED_BY_STATIC_SCAN",
+    "scientific_acceptance": "NOT_ASSERTED",
+    "public_copy": {
+      "path": "migration_sources/current_archive/releases/qwen_minimal_peer_reuse_r6_20261001/source/run_job.py",
+      "archive_sha256": "bb6e18d1d9f11aa941f554dd929054765af50fd1821a19631387d5c878a4f104",
+      "public_sha256": "3e9bb365e23ca128aafc7b5f35a4ee71f827d8acfa570e2eaadb41a73700012e",
+      "archive_source_relative_path": "releases/qwen_minimal_peer_reuse_r6_20261001/source/run_job.py",
+      "changes": "added publication/attribution comment header; CRLF-to-LF when present; no path substitutions were needed",
+      "algorithm_ast_identity": "PASS",
+      "license_basis": {
+        "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+        "potential_adapted_components": [],
+        "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+        "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+      }
+    }
+  },
+  {
+    "source_relative_path": "route/releases/smol_existing_configuration_correction_20261001_r1/source/route/benchmarks/smolvlm_full_reproduction_20260903/migration/dtome_legacy_bridge.py",
+    "archive_sha256": "4ce362f26252d6a5b32149ba27367e68fbf3dc8b0535e16eeb4b286c4fc4b717",
+    "bytes": 3667,
+    "disposition": "PUBLIC_SOURCE_CANDIDATE",
+    "reason": "Previously withheld by a blanket mixed-method rule. Static review identifies user-project runner/bridge/kernel/metadata code; user explicitly authorizes this publication candidate. Imported or hash-loaded unlicensed iLLaVA author files are not redistributed. External/missing dependencies remain explicit.",
+    "license_basis": {
+      "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+      "potential_adapted_components": [
+        {
+          "method": "dymu",
+          "repository": "https://github.com/MikeWangWZHL/dymu",
+          "commit": "3770d6add8fd9b972ae611f3f3b16a552dea13cc",
+          "license": "MIT (retain original OpenCLIP notices; nested LLaVA component Apache-2.0)"
+        }
+      ],
+      "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+      "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+    },
+    "upstream_original_sha256": null,
+    "upstream_original_sha256_reason": "project migration file is not represented as an unchanged upstream author file",
+    "imports_static": [
+      "importlib",
+      "pathlib",
+      "types"
+    ],
+    "private_path_cleanup": "NONE_REQUIRED_BY_STATIC_SCAN",
+    "scientific_acceptance": "NOT_ASSERTED",
+    "public_copy": {
+      "path": "migration_sources/current_archive/route/releases/smol_existing_configuration_correction_20261001_r1/source/route/benchmarks/smolvlm_full_reproduction_20260903/migration/dtome_legacy_bridge.py",
+      "archive_sha256": "4ce362f26252d6a5b32149ba27367e68fbf3dc8b0535e16eeb4b286c4fc4b717",
+      "public_sha256": "c41eaecd96d3f96e34f194ed42102565a1a8acf780dd52d8051acb12ab5e0448",
+      "archive_source_relative_path": "route/releases/smol_existing_configuration_correction_20261001_r1/source/route/benchmarks/smolvlm_full_reproduction_20260903/migration/dtome_legacy_bridge.py",
+      "changes": "added publication/attribution comment header; CRLF-to-LF when present; no path substitutions were needed",
+      "algorithm_ast_identity": "PASS",
+      "license_basis": {
+        "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+        "potential_adapted_components": [
+          {
+            "method": "dymu",
+            "repository": "https://github.com/MikeWangWZHL/dymu",
+            "commit": "3770d6add8fd9b972ae611f3f3b16a552dea13cc",
+            "license": "MIT (retain original OpenCLIP notices; nested LLaVA component Apache-2.0)"
+          }
+        ],
+        "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+        "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+      }
+    }
+  },
+  {
+    "source_relative_path": "route/releases/smol_existing_configuration_correction_20261001_r1/source/route/benchmarks/smolvlm_full_reproduction_20260903/migration/smol_ipcv_port.py",
+    "archive_sha256": "96d046d356ff100a6eaf4040284b450f89965b54f116aefc45fb2238de5e4d5c",
+    "bytes": 6102,
+    "disposition": "PUBLIC_SOURCE_CANDIDATE",
+    "reason": "Previously withheld by a blanket mixed-method rule. Static review identifies user-project runner/bridge/kernel/metadata code; user explicitly authorizes this publication candidate. Imported or hash-loaded unlicensed iLLaVA author files are not redistributed. External/missing dependencies remain explicit.",
+    "license_basis": {
+      "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+      "potential_adapted_components": [
+        {
+          "method": "ipcv",
+          "repository": "https://github.com/Perkzi/IPCV",
+          "commit": "29726f044f0f9c0c2be4eb0005888ddeb5fa188e",
+          "license": "Apache-2.0"
+        }
+      ],
+      "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+      "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+    },
+    "upstream_original_sha256": null,
+    "upstream_original_sha256_reason": "project migration file is not represented as an unchanged upstream author file",
+    "imports_static": [
+      "__future__",
+      "dataclasses",
+      "smol_merge_ports",
+      "torch",
+      "transformers"
+    ],
+    "private_path_cleanup": "NONE_REQUIRED_BY_STATIC_SCAN",
+    "scientific_acceptance": "NOT_ASSERTED",
+    "public_copy": {
+      "path": "migration_sources/current_archive/route/releases/smol_existing_configuration_correction_20261001_r1/source/route/benchmarks/smolvlm_full_reproduction_20260903/migration/smol_ipcv_port.py",
+      "archive_sha256": "96d046d356ff100a6eaf4040284b450f89965b54f116aefc45fb2238de5e4d5c",
+      "public_sha256": "116a447d2fde89620d76d29f4eea10f84452db24d82b75b3db38d7599559ad9f",
+      "archive_source_relative_path": "route/releases/smol_existing_configuration_correction_20261001_r1/source/route/benchmarks/smolvlm_full_reproduction_20260903/migration/smol_ipcv_port.py",
+      "changes": "added publication/attribution comment header; CRLF-to-LF when present; no path substitutions were needed",
+      "algorithm_ast_identity": "PASS",
+      "license_basis": {
+        "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+        "potential_adapted_components": [
+          {
+            "method": "ipcv",
+            "repository": "https://github.com/Perkzi/IPCV",
+            "commit": "29726f044f0f9c0c2be4eb0005888ddeb5fa188e",
+            "license": "Apache-2.0"
+          }
+        ],
+        "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+        "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+      }
+    }
+  },
+  {
+    "source_relative_path": "route/releases/smol_existing_configuration_correction_20261001_r1/source/route/benchmarks/smolvlm_full_reproduction_20260903/migration/smol_merge_ports.py",
+    "archive_sha256": "d550750bb8a191b25bad46161f9ae3fef1131fe4ec32ed6e29601d07096cfe61",
+    "bytes": 9526,
+    "disposition": "EXCLUDED_FULL_FILE",
+    "reason": "Contains actual illava_step implementation at lines 84-110 together with PiToMe; full file withheld. Exact PiToMe/helper/host nodes are separately selected without rewriting their implementations.",
+    "license_basis": {
+      "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+      "potential_adapted_components": [
+        {
+          "method": "pitome",
+          "repository": "https://github.com/hchautran/PiToMe",
+          "commit": "550b5deed94aadfeac28bfbe381d87e672044a40",
+          "license": "CC-BY-NC-4.0 (author portions; not a replacement for HF Apache notices)"
+        }
+      ],
+      "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+      "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+    },
+    "upstream_original_sha256": null,
+    "upstream_original_sha256_reason": "project migration file is not represented as an unchanged upstream author file",
+    "imports_static": [
+      "__future__",
+      "dataclasses",
+      "math",
+      "torch",
+      "transformers"
+    ],
+    "private_path_cleanup": "NONE_REQUIRED_BY_STATIC_SCAN",
+    "scientific_acceptance": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "route/releases/smol_existing_configuration_correction_20261001_r1/source/route/benchmarks/smolvlm_full_reproduction_20260903/production/peer_common.py",
+    "archive_sha256": "c9eba1e0b5f4f379f97475193bbe8de559e5cceec327990ef6f227453b92ea85",
+    "bytes": 13385,
+    "disposition": "PUBLIC_SOURCE_CANDIDATE",
+    "reason": "Previously withheld by a blanket mixed-method rule. Static review identifies user-project runner/bridge/kernel/metadata code; user explicitly authorizes this publication candidate. Imported or hash-loaded unlicensed iLLaVA author files are not redistributed. External/missing dependencies remain explicit.",
+    "license_basis": {
+      "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+      "potential_adapted_components": [
+        {
+          "method": "pitome",
+          "repository": "https://github.com/hchautran/PiToMe",
+          "commit": "550b5deed94aadfeac28bfbe381d87e672044a40",
+          "license": "CC-BY-NC-4.0 (author portions; not a replacement for HF Apache notices)"
+        },
+        {
+          "method": "dymu",
+          "repository": "https://github.com/MikeWangWZHL/dymu",
+          "commit": "3770d6add8fd9b972ae611f3f3b16a552dea13cc",
+          "license": "MIT (retain original OpenCLIP notices; nested LLaVA component Apache-2.0)"
+        },
+        {
+          "method": "ipcv",
+          "repository": "https://github.com/Perkzi/IPCV",
+          "commit": "29726f044f0f9c0c2be4eb0005888ddeb5fa188e",
+          "license": "Apache-2.0"
+        }
+      ],
+      "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+      "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+    },
+    "upstream_original_sha256": null,
+    "upstream_original_sha256_reason": "project migration file is not represented as an unchanged upstream author file",
+    "imports_static": [
+      "__future__",
+      "contextlib",
+      "dtome_legacy_bridge",
+      "hashlib",
+      "json",
+      "math",
+      "os",
+      "pathlib",
+      "smol_ficoco_port",
+      "smol_ipcv_port",
+      "smol_merge_ports"
+    ],
+    "private_path_cleanup": "NONE_REQUIRED_BY_STATIC_SCAN",
+    "scientific_acceptance": "NOT_ASSERTED",
+    "public_copy": {
+      "path": "migration_sources/current_archive/route/releases/smol_existing_configuration_correction_20261001_r1/source/route/benchmarks/smolvlm_full_reproduction_20260903/production/peer_common.py",
+      "archive_sha256": "c9eba1e0b5f4f379f97475193bbe8de559e5cceec327990ef6f227453b92ea85",
+      "public_sha256": "a984a15a4980e64c7b5f74a8ee0bc4c6d6b8b38756a9f4493adaf875d85086ac",
+      "archive_source_relative_path": "route/releases/smol_existing_configuration_correction_20261001_r1/source/route/benchmarks/smolvlm_full_reproduction_20260903/production/peer_common.py",
+      "changes": "added publication/attribution comment header; CRLF-to-LF when present; no path substitutions were needed",
+      "algorithm_ast_identity": "PASS",
+      "license_basis": {
+        "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+        "potential_adapted_components": [
+          {
+            "method": "pitome",
+            "repository": "https://github.com/hchautran/PiToMe",
+            "commit": "550b5deed94aadfeac28bfbe381d87e672044a40",
+            "license": "CC-BY-NC-4.0 (author portions; not a replacement for HF Apache notices)"
+          },
+          {
+            "method": "dymu",
+            "repository": "https://github.com/MikeWangWZHL/dymu",
+            "commit": "3770d6add8fd9b972ae611f3f3b16a552dea13cc",
+            "license": "MIT (retain original OpenCLIP notices; nested LLaVA component Apache-2.0)"
+          },
+          {
+            "method": "ipcv",
+            "repository": "https://github.com/Perkzi/IPCV",
+            "commit": "29726f044f0f9c0c2be4eb0005888ddeb5fa188e",
+            "license": "Apache-2.0"
+          }
+        ],
+        "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+        "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+      }
+    }
+  },
+  {
+    "source_relative_path": "route/releases/smol_existing_configuration_correction_20261001_r1/source/route/hypotheses/v439_h125_dtome_smolvlm_pope_full300/evaluate.py",
+    "archive_sha256": "bcc0a9b1d31617df6d10e69bae57e4775fb2cdeb229f239db654d48213458f9f",
+    "bytes": 44888,
+    "disposition": "PUBLIC_SOURCE_CANDIDATE",
+    "reason": "Previously withheld by a blanket mixed-method rule. Static review identifies user-project runner/bridge/kernel/metadata code; user explicitly authorizes this publication candidate. Imported or hash-loaded unlicensed iLLaVA author files are not redistributed. External/missing dependencies remain explicit.",
+    "license_basis": {
+      "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+      "potential_adapted_components": [
+        {
+          "method": "dymu",
+          "repository": "https://github.com/MikeWangWZHL/dymu",
+          "commit": "3770d6add8fd9b972ae611f3f3b16a552dea13cc",
+          "license": "MIT (retain original OpenCLIP notices; nested LLaVA component Apache-2.0)"
+        }
+      ],
+      "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+      "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+    },
+    "upstream_original_sha256": null,
+    "upstream_original_sha256_reason": "project migration file is not represented as an unchanged upstream author file",
+    "imports_static": [
+      "PIL",
+      "__future__",
+      "base64",
+      "csv",
+      "gc",
+      "hashlib",
+      "huggingface_hub",
+      "io",
+      "json",
+      "math",
+      "pathlib",
+      "platform",
+      "random",
+      "re",
+      "statistics",
+      "subprocess",
+      "sys",
+      "torch",
+      "transformers",
+      "typing"
+    ],
+    "private_path_cleanup": "NONE_REQUIRED_BY_STATIC_SCAN",
+    "scientific_acceptance": "NOT_ASSERTED",
+    "public_copy": {
+      "path": "migration_sources/current_archive/route/releases/smol_existing_configuration_correction_20261001_r1/source/route/hypotheses/v439_h125_dtome_smolvlm_pope_full300/evaluate.py",
+      "archive_sha256": "bcc0a9b1d31617df6d10e69bae57e4775fb2cdeb229f239db654d48213458f9f",
+      "public_sha256": "bd0bb964661be028874b76c382b7e7235ecaa380a01456de8038bb7f0326fd1f",
+      "archive_source_relative_path": "route/releases/smol_existing_configuration_correction_20261001_r1/source/route/hypotheses/v439_h125_dtome_smolvlm_pope_full300/evaluate.py",
+      "changes": "added publication/attribution comment header; CRLF-to-LF when present; no path substitutions were needed",
+      "algorithm_ast_identity": "PASS",
+      "license_basis": {
+        "project_code_permission": "explicit user instruction to publicly release actual migration code; no new blanket license assigned",
+        "potential_adapted_components": [
+          {
+            "method": "dymu",
+            "repository": "https://github.com/MikeWangWZHL/dymu",
+            "commit": "3770d6add8fd9b972ae611f3f3b16a552dea13cc",
+            "license": "MIT (retain original OpenCLIP notices; nested LLaVA component Apache-2.0)"
+          }
+        ],
+        "host_components": "Transformers Apache-2.0; CLIP OpenAI/HuggingFace copyright notice retained; external library imports alone do not redistribute those libraries",
+        "limit": "component attribution is not a scientific fidelity judgment; unspecified dependency/file provenance remains MISSING"
+      }
+    }
+  }
+]

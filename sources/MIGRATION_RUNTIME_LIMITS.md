@@ -1,0 +1,38 @@
+# 静态运行依赖与选集边界
+
+本批没有import、安装或执行科学代码；以下是从实际源码解析确认的阻断，不是运行测试通过证明。STATIC_DEPENDENCIES.json是import语句清单，不能当完整依赖锁或依赖闭合证明。
+
+路径简称（均相对仓库根）：
+
+- Q = migration_sources/current_archive/releases/qwen_minimal_peer_reuse_r6_20261001/source
+- O = migration_sources/current_archive/releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global
+- L = migration_sources/current_archive/releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800
+- S = migration_sources/current_archive/route/releases/smol_existing_configuration_correction_20261001_r1/source/route/benchmarks/smolvlm_full_reproduction_20260903
+
+## Qwen：不能直接用选集替换原模块
+
+Q/qwen_peer_ports.py:20–31无条件from peer_port_core导入，其中第24行ficoco_compress、第28行restore_ficoco已从extracted_components/qwen_r6/peer_port_core.py省略。原路径本身也未放入这个选集。即便手工把选集放回原位置，其缺符号仍在模块import时阻断，发生在选择PiToMe或DToMe模式之前。选集里保留FiCoCoStep简单数据类不表示包含FiCoCo算法；两项核心函数确实未收入。
+
+Q/method_runtime.py:15、17还顶层引用h259_bridge及qwen_peer_ports；第290行引用未收入的illava_native_adapter，另需IPCV作者包/repair、冻结evaluator和模型processor资源。不能仅靠安装torch/transformers运行这一快照。
+
+## Smol：PiToMe选集不是iLLaVA发行包
+
+extracted_components/smol_pitome/smol_merge_ports.py与onevision_shared_pitome同名文件保留6个原顶层节点。SmolMergePort仍接受illava_vit（103–105行）且在169行调用已省略illava_step；选择该分支会缺符号。保留这个未改的原类是为了可审计节点身份，并未以新分支改写原算法。
+
+S/migration/smol_ipcv_port.py:17从smol_merge_ports导入gather_rows；S/production/peer_common.py:240–242亦引用SmolMergePort。由于选集在不同目录，它们不是已安装就位的原模块。dtome_legacy_bridge另按原相对路径加载H125 evaluate.py；evaluate还需原作者阈值/源码和模型数据。当前保留dispatch/none-pass差异，不以打包改动修正实验算法。
+
+## OneVision：顶层作者桥接未齐
+
+O/onevision_ports.py:15–16无条件导入author_dtome_bridge与author_illava_bridge，本批两文件都未收入；因此只选PiToMe也不能直接导入完整OneVision桥接。第33–37行source hash检查还要求global_ipcv_port、完整Smol模块、作者资源目录等。author_visual_source.py:20–25、28–32对frozen_author_source下的作者文件严格hash验证；该加载器不内嵌这些文件。
+
+O/formal_fp32/onevision_runtime.py:44还读取未收入的environment_lock.json，模型加载依赖冻结checkpoint/processor、FP32权重转换recipe资产和配置。不得把选集放入后修改hash门为通过。
+
+## LLaVA：完整运行器不等于完整环境
+
+L/llava_runtime.py:70–78在加载前读取多份frozen_sources、ours_h297及FP32 port资源；:273–274引用clip_peer_ports、run_port_job；:280–283引用自定义adapter、layout和Triton算子；:342、347分别引用author_dymu_bridge与ipcv_clip_batch。本批只带完整运行器文件，不声称这些依赖齐全。
+
+L/frozen_sources/pitome_author_fp16.py:22–23在模块顶层读取H297_OUTPUT环境变量并创建输出目录；它不是无副作用的“只读参考import”。AUTHOR_PAYLOADS的两份解码作者源已静态核验哈希与公开参考AST，但没有执行其materialize函数。原载荷和新加归属注释的明文副本字节不同，二者不能互换原hash。
+
+## 解释边界
+
+完整文件全文AST相同只支持注释/换行清理未改变Python语法语义结构；不证明外部环境、导入解析、全局状态或模型输出一致。选集逐节点AST相同只证明被保留节点未改，不证明省略后的模块具备原功能。未来若添加入口/导入隔离，应单独冻结包装版本、审查可达路径和依赖，保留本批及原实验的身份。

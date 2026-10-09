@@ -1,0 +1,42 @@
+{
+  "qwen2vl": {
+    "source_url": "https://github.com/huggingface/transformers/blob/v4.57.6/src/transformers/models/qwen2_vl/modeling_qwen2_vl.py",
+    "git_blob_sha": "269f37492ad6375ac610463cc58a382700c94d62",
+    "source_lines": "1-19; eager_attention_forward at 295-318",
+    "license": "Apache-2.0",
+    "license_file_in_candidate": "third_party/transformers/LICENSE",
+    "candidate_relevance": "migration_sources/current_archive/releases/qwen_minimal_peer_reuse_r6_20261001/source/fp16_eager_stability.py:22-36; Qwen host-derived portions if any in qwen_peer_ports.py"
+  },
+  "internvl_header": {
+    "source_url": "https://github.com/Perkzi/IPCV/blob/29726f044f0f9c0c2be4eb0005888ddeb5fa188e/InternVL2/InternVL2_IPCV/modeling_intern_vit_sparse_IPCV.py",
+    "git_blob_sha": "94784fefff3ec8e7698ace250b7c46f0eb8928f1",
+    "source_lines": "1-5; NGR at 300-324,548-555,604-623; delta selection at 644-662",
+    "license": "file-level MIT attribution; IPCV root Apache-2.0 must not overwrite underlying MIT",
+    "candidate_relevance": "migration_sources/current_archive/route/releases/smol_existing_configuration_correction_20261001_r1/source/route/benchmarks/smolvlm_full_reproduction_20260903/migration/smol_ipcv_port.py:6-9,31-65"
+  },
+  "internvl_mit": {
+    "source_url": "https://github.com/OpenGVLab/InternVL/blob/2410d1dbf208f0e799459aff9376e5747dbf41a2/LICENSE",
+    "commit": "2410d1dbf208f0e799459aff9376e5747dbf41a2",
+    "git_blob_sha": "2925d85d93cee75efe0af95f749d07e338e09d11",
+    "source_lines": "entire LICENSE",
+    "note": "Supplemental original InternVL license from a separately pinned official OpenGVLab source; not present in the pinned IPCV tree. Preserve the 2024 source-file notice separately from the 2023 license notice."
+  },
+  "new_files": [
+    {
+      "path": "third_party/transformers/QWEN2VL_COPYRIGHT_HEADER.txt",
+      "sha256": "96acd6ca2b5be03e5d1c0908fccb3eea7b4b8775b0494a1c95b29f5c580d2374",
+      "bytes": 949
+    },
+    {
+      "path": "third_party/ipcv/INTERNVL_COPYRIGHT_HEADER.txt",
+      "sha256": "cbe75244b67498a277a710a6af85740de989d605ccc440e74960203982a98498",
+      "bytes": 219
+    },
+    {
+      "path": "third_party/ipcv/INTERNVL_MIT_LICENSE",
+      "sha256": "8f03d25fbcffafa2254d4d1414bf2a38423a966006b4a6964ee21f728d610bff",
+      "bytes": 1066
+    }
+  ],
+  "review_limit": "This is attribution-preservation documentation, not a legal certification or an assertion that every host wrapper is a copyright derivative."
+}

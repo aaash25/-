@@ -1,0 +1,314 @@
+{
+  "scope": "Static source identity, publication content and dependency review; no model/GPU execution, no global scientific or legal certification",
+  "input_archive_sha256": "3f7a754e655da92297817712ddd0d5f0253501d0068456f79d26b9765f2c1898",
+  "base_commit": "ed7b06b65c5e563106671e76fe37ce4e0f2cac78",
+  "base_files_verified_by_git_blob_sha": 30,
+  "full_file_ast_identity_count": 25,
+  "selected_modules": 3,
+  "selected_top_level_nodes_identity_count": 25,
+  "checks": [
+    {
+      "path": "migration_sources/current_archive/releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/checkpoint_journal.py",
+      "original_sha256": "800b39ac2b301425bce8d7386a12d433c7f718a318e524dcff2c53f74e80f7c4",
+      "ast_equal": true,
+      "public_sha256": "a78c4470d0121811033a20447f6760c327e18b8e2d69c17a34ac173156f324b4"
+    },
+    {
+      "path": "migration_sources/current_archive/releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/frozen_sources/pitome_author_fp16.py",
+      "original_sha256": "b058fcae583b4eea2d10d477ed780aa87e08efbf34a36d2e72d34b65263d0a66",
+      "ast_equal": true,
+      "public_sha256": "c2ceac67bb379fd58f93981f15304e9e7f64dee9053c5f67d88e75923cdf1196"
+    },
+    {
+      "path": "migration_sources/current_archive/releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/grid.py",
+      "original_sha256": "5e5c994a532755d288060686dfaf1e9aead1a6e15f51370c1265596cd89a4174",
+      "ast_equal": true,
+      "public_sha256": "e4ad5daba437a7a677b9c04f45b3dd11f2d12c896d4c37079e4d7a326f03061f"
+    },
+    {
+      "path": "migration_sources/current_archive/releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/llava_runtime.py",
+      "original_sha256": "40f1e15d91ca7eb4780a06341675c55f0df87fb031b095c21bf7fef545d8967b",
+      "ast_equal": true,
+      "public_sha256": "446fdc7ad72a838e522f505b5bb2a493a4d0e920df3b294c2c6b0c82704229e3"
+    },
+    {
+      "path": "migration_sources/current_archive/releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/prompting.py",
+      "original_sha256": "b2e86a7a7be61726ac48c7397dff7dcfaabe68a46fa94ce5d2c03f678c016a37",
+      "ast_equal": true,
+      "public_sha256": "bbb18d1e5e140df134741277bb1b478c6ade8ba4888d1ee09d8b4083368ea7bd"
+    },
+    {
+      "path": "migration_sources/current_archive/releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/run_job.py",
+      "original_sha256": "1cee29233a3d07a78221461d3c645c38c826c0c037154e9de41d9192df4fbbd7",
+      "ast_equal": true,
+      "public_sha256": "cfd3cdb9ea79592ffc19b3c5f12bcf280c958af14b06411e959dad98d921ab59"
+    },
+    {
+      "path": "migration_sources/current_archive/releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/author_visual_source.py",
+      "original_sha256": "b89b5a038671370fdf3695a029ecdbf6574ad5225fe27c9f917b72536779ec53",
+      "ast_equal": true,
+      "public_sha256": "906de084c41fa87794e763b1585b0662bdc587f348c5fa2657939f4155949796"
+    },
+    {
+      "path": "migration_sources/current_archive/releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/formal_fp32/checkpoint_journal.py",
+      "original_sha256": "800b39ac2b301425bce8d7386a12d433c7f718a318e524dcff2c53f74e80f7c4",
+      "ast_equal": true,
+      "public_sha256": "a78c4470d0121811033a20447f6760c327e18b8e2d69c17a34ac173156f324b4"
+    },
+    {
+      "path": "migration_sources/current_archive/releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/formal_fp32/grid.py",
+      "original_sha256": "ca60f630aacd8b1eb0d1f27f7e7a8281a955223e2c744e2ead29ad92907cd4f8",
+      "ast_equal": true,
+      "public_sha256": "57ab52cc7c1962d1c72375e948e4ec5d28fdc133b8d34e32a080f98c9fb01cae"
+    },
+    {
+      "path": "migration_sources/current_archive/releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/formal_fp32/onevision_runtime.py",
+      "original_sha256": "3aba8bdf4fa68f76c8888a9d6e3e14e49c1aa7870ca0cf6b77f183b5d2d3e6fe",
+      "ast_equal": true,
+      "public_sha256": "4e275e15ca0c1e0028526657cd31ce635a624d6d98043415d2252a4bc8db8cfc"
+    },
+    {
+      "path": "migration_sources/current_archive/releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/formal_fp32/run_job.py",
+      "original_sha256": "575953f3c626755169520c9789e6df1fd173ff258b8f3b7fb691735f922e25b7",
+      "ast_equal": true,
+      "public_sha256": "0fca3d69e307f8ada70b924bef04a5e21ac42611c1d980b17a96ce55e02130b5"
+    },
+    {
+      "path": "migration_sources/current_archive/releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/frozen_fp32_recipe/common.py",
+      "original_sha256": "85447517ecf1e59df2a715ec93777f3320a7534ee6f7b258cbc1d63e4039f4c8",
+      "ast_equal": true,
+      "public_sha256": "6268b9bcdd555d48290203af0351274208789cd6ff2b96409f14c517af2ad65f"
+    },
+    {
+      "path": "migration_sources/current_archive/releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/onevision_ports.py",
+      "original_sha256": "04f8a026a173557bc27bcd377df8652d4accb45b0f0e9559c5bf9eb1b98661d7",
+      "ast_equal": true,
+      "public_sha256": "50419aa475c48d4a51e1015264164a94d9f409d77c45183e09cca235583f09fb"
+    },
+    {
+      "path": "migration_sources/current_archive/releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/precision_gate_rope_r1.py",
+      "original_sha256": "567de6618163d78ee1f82787e6af9f81b76cd6f121586978c8a9165d3e52ed06",
+      "ast_equal": true,
+      "public_sha256": "8803c0b01b6fe68443fe0362b94ccb4af62761b220634526418cf2c4571c0ff1"
+    },
+    {
+      "path": "migration_sources/current_archive/releases/qwen_minimal_peer_reuse_r6_20261001/source/checkpoint_journal.py",
+      "original_sha256": "800b39ac2b301425bce8d7386a12d433c7f718a318e524dcff2c53f74e80f7c4",
+      "ast_equal": true,
+      "public_sha256": "a78c4470d0121811033a20447f6760c327e18b8e2d69c17a34ac173156f324b4"
+    },
+    {
+      "path": "migration_sources/current_archive/releases/qwen_minimal_peer_reuse_r6_20261001/source/dataset_registry.py",
+      "original_sha256": "d0f59dd361f7e63a9848d0e596dc5a3aef2540d568e40b900f41b3e31a8a7f12",
+      "ast_equal": true,
+      "public_sha256": "40c543f8ef99bc04deae014756fc6ce83227188ce1ac491238fee6389fe0a367"
+    },
+    {
+      "path": "migration_sources/current_archive/releases/qwen_minimal_peer_reuse_r6_20261001/source/fp16_eager_stability.py",
+      "original_sha256": "a9e544e5537eeccae54dcc6be398f3f2571c5a39cb45de9e052d1c0339a4faaf",
+      "ast_equal": true,
+      "public_sha256": "fa35fc86b16d1226227d27a690a24157f18e67d8795d41e9669fdb9e60f10f48"
+    },
+    {
+      "path": "migration_sources/current_archive/releases/qwen_minimal_peer_reuse_r6_20261001/source/grid.py",
+      "original_sha256": "17049a8cdc5cab7a6e8fe36462a7eb3992a7641091aa756eec4710e3b1585d6f",
+      "ast_equal": true,
+      "public_sha256": "9273b19b110f42c078ccb34fca6cedead28b2ef993080af9843661ca2ef9fa85"
+    },
+    {
+      "path": "migration_sources/current_archive/releases/qwen_minimal_peer_reuse_r6_20261001/source/method_runtime.py",
+      "original_sha256": "b010eabb6d3f956dbf94eb1dc5afd7d63f7d7a90040d4dd119686f90c661c25a",
+      "ast_equal": true,
+      "public_sha256": "60ef6c9c8a3a0a6fbdc150aa8326ab5c45650b8364a8b639986ff3305564c861"
+    },
+    {
+      "path": "migration_sources/current_archive/releases/qwen_minimal_peer_reuse_r6_20261001/source/qwen_peer_ports.py",
+      "original_sha256": "5a7c830b88f6a8b8573c3ce368cae8036fb773bd6e4795c17015f214b63ef467",
+      "ast_equal": true,
+      "public_sha256": "aed808b1ee93133231360111862098651d3839f532731205c619e05552efb1de"
+    },
+    {
+      "path": "migration_sources/current_archive/releases/qwen_minimal_peer_reuse_r6_20261001/source/run_job.py",
+      "original_sha256": "bb6e18d1d9f11aa941f554dd929054765af50fd1821a19631387d5c878a4f104",
+      "ast_equal": true,
+      "public_sha256": "3e9bb365e23ca128aafc7b5f35a4ee71f827d8acfa570e2eaadb41a73700012e"
+    },
+    {
+      "path": "migration_sources/current_archive/route/releases/smol_existing_configuration_correction_20261001_r1/source/route/benchmarks/smolvlm_full_reproduction_20260903/migration/dtome_legacy_bridge.py",
+      "original_sha256": "4ce362f26252d6a5b32149ba27367e68fbf3dc8b0535e16eeb4b286c4fc4b717",
+      "ast_equal": true,
+      "public_sha256": "c41eaecd96d3f96e34f194ed42102565a1a8acf780dd52d8051acb12ab5e0448"
+    },
+    {
+      "path": "migration_sources/current_archive/route/releases/smol_existing_configuration_correction_20261001_r1/source/route/benchmarks/smolvlm_full_reproduction_20260903/migration/smol_ipcv_port.py",
+      "original_sha256": "96d046d356ff100a6eaf4040284b450f89965b54f116aefc45fb2238de5e4d5c",
+      "ast_equal": true,
+      "public_sha256": "116a447d2fde89620d76d29f4eea10f84452db24d82b75b3db38d7599559ad9f"
+    },
+    {
+      "path": "migration_sources/current_archive/route/releases/smol_existing_configuration_correction_20261001_r1/source/route/benchmarks/smolvlm_full_reproduction_20260903/production/peer_common.py",
+      "original_sha256": "c9eba1e0b5f4f379f97475193bbe8de559e5cceec327990ef6f227453b92ea85",
+      "ast_equal": true,
+      "public_sha256": "a984a15a4980e64c7b5f74a8ee0bc4c6d6b8b38756a9f4493adaf875d85086ac"
+    },
+    {
+      "path": "migration_sources/current_archive/route/releases/smol_existing_configuration_correction_20261001_r1/source/route/hypotheses/v439_h125_dtome_smolvlm_pope_full300/evaluate.py",
+      "original_sha256": "bcc0a9b1d31617df6d10e69bae57e4775fb2cdeb229f239db654d48213458f9f",
+      "ast_equal": true,
+      "public_sha256": "bd0bb964661be028874b76c382b7e7235ecaa380a01456de8038bb7f0326fd1f"
+    },
+    {
+      "path": "migration_sources/extracted_components/onevision_shared_pitome/smol_merge_ports.py",
+      "node_checks": [
+        {
+          "name": "MergeStep",
+          "ast_equal": true
+        },
+        {
+          "name": "gather_rows",
+          "ast_equal": true
+        },
+        {
+          "name": "identity_parent",
+          "ast_equal": true
+        },
+        {
+          "name": "_assemble",
+          "ast_equal": true
+        },
+        {
+          "name": "pitome_step",
+          "ast_equal": true
+        },
+        {
+          "name": "SmolMergePort",
+          "ast_equal": true
+        }
+      ],
+      "omitted_nodes": [
+        "illava_step"
+      ],
+      "top_level_non_nodes_equal": true,
+      "public_sha256": "7bec4c0d5b7339a379cc653ea7a8bf27af5615cb53f5e11d764ab505c8c07a92"
+    },
+    {
+      "path": "migration_sources/extracted_components/qwen_r6/peer_port_core.py",
+      "node_checks": [
+        {
+          "name": "SegmentState",
+          "ast_equal": true
+        },
+        {
+          "name": "MergeResult",
+          "ast_equal": true
+        },
+        {
+          "name": "FiCoCoStep",
+          "ast_equal": true
+        },
+        {
+          "name": "make_segments",
+          "ast_equal": true
+        },
+        {
+          "name": "concatenate",
+          "ast_equal": true
+        },
+        {
+          "name": "cu_seqlens",
+          "ast_equal": true
+        },
+        {
+          "name": "gathered_positions",
+          "ast_equal": true
+        },
+        {
+          "name": "deterministic_group_sum",
+          "ast_equal": true
+        },
+        {
+          "name": "_assemble_mean",
+          "ast_equal": true
+        },
+        {
+          "name": "pitome_merge",
+          "ast_equal": true
+        },
+        {
+          "name": "dtome_merge",
+          "ast_equal": true
+        },
+        {
+          "name": "update_state",
+          "ast_equal": true
+        },
+        {
+          "name": "restore_parent",
+          "ast_equal": true
+        }
+      ],
+      "omitted_nodes": [
+        "ficoco_compress",
+        "restore_ficoco"
+      ],
+      "top_level_non_nodes_equal": true,
+      "public_sha256": "95bde90c23e3a77349cc84ce49c4a55fd93832c2c2d7116621406bfbdaaba5a1"
+    },
+    {
+      "path": "migration_sources/extracted_components/smol_pitome/smol_merge_ports.py",
+      "node_checks": [
+        {
+          "name": "MergeStep",
+          "ast_equal": true
+        },
+        {
+          "name": "gather_rows",
+          "ast_equal": true
+        },
+        {
+          "name": "identity_parent",
+          "ast_equal": true
+        },
+        {
+          "name": "_assemble",
+          "ast_equal": true
+        },
+        {
+          "name": "pitome_step",
+          "ast_equal": true
+        },
+        {
+          "name": "SmolMergePort",
+          "ast_equal": true
+        }
+      ],
+      "omitted_nodes": [
+        "illava_step"
+      ],
+      "top_level_non_nodes_equal": true,
+      "public_sha256": "7bec4c0d5b7339a379cc653ea7a8bf27af5615cb53f5e11d764ab505c8c07a92"
+    }
+  ],
+  "payload_checks": [
+    {
+      "payload": "merge.py",
+      "sha256": "57f286663de05b1ce6a239f0db015cf745475a8c271e4ac0d214dc3e521b6145",
+      "stored_sha_match": true,
+      "ast_equal_decoded_public": true
+    },
+    {
+      "payload": "patch/clip_hf.py",
+      "sha256": "a32b5db7e78b9e1c49cf7672d34ef75993ebbd4d8ff965828e97c90a071ea57a",
+      "stored_sha_match": true,
+      "ast_equal_decoded_public": true
+    }
+  ],
+  "packaging_status": "SOURCE_SNAPSHOT_NOT_COMPLETE_RUNNABLE_RELEASE",
+  "source_bytes_changed_during_this_review": false,
+  "documentation_changes": [
+    "SOURCE_CANDIDATE_README.md rewritten for specific runtime blockers and batch scope",
+    "third_party/COMPONENT_NOTICES.md appended with Qwen2-VL/InternVL attribution",
+    "New runtime limits and provenance/notice files; original code and license bytes retained"
+  ],
+  "root_manifest_policy": "Keep first-batch root MANIFEST.json unchanged; new full-view manifest separately named"
+}

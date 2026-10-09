@@ -1,0 +1,9 @@
+--- archive/releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/formal_fp32/checkpoint_journal.py
++++ migration_sources/current_archive/releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/formal_fp32/checkpoint_journal.py
+@@ -1,3 +1,6 @@
++# Publication copy: comments/line endings only; algorithm AST unchanged.
++# Project migration copy; retain upstream method and host notices. No experiment executed.
++# Component licensing and exact source hashes: sources/FILE_DISPOSITIONS.json.
+ """Durable, single-writer result journal, independent of any GPU evaluator.
+ 
+ One record must contain one COMPLETE request (sample ID x mode), including its

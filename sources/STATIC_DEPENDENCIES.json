@@ -1,0 +1,494 @@
+[
+  {
+    "source_relative_path": "releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/checkpoint_journal.py",
+    "imports": [
+      "__future__",
+      "fcntl",
+      "json",
+      "msvcrt",
+      "os",
+      "pathlib",
+      "uuid",
+      "zlib"
+    ],
+    "dependency_status": "STATIC_INVENTORY_ONLY; system packages and omitted relative modules must be resolved against the exact frozen contract; no installation or import/run was performed",
+    "public_complete_runtime": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/frozen_sources/pitome_author_fp16.py",
+    "imports": [
+      "PIL",
+      "__future__",
+      "argparse",
+      "author_pitome",
+      "base64",
+      "csv",
+      "hashlib",
+      "huggingface_hub",
+      "io",
+      "json",
+      "llava_vision_loader",
+      "os",
+      "pathlib",
+      "statistics",
+      "subprocess",
+      "sys",
+      "time",
+      "torch",
+      "traceback",
+      "transformers",
+      "zlib"
+    ],
+    "dependency_status": "STATIC_INVENTORY_ONLY; system packages and omitted relative modules must be resolved against the exact frozen contract; no installation or import/run was performed",
+    "public_complete_runtime": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/grid.py",
+    "imports": [
+      "__future__",
+      "dataset_registry"
+    ],
+    "dependency_status": "STATIC_INVENTORY_ONLY; system packages and omitted relative modules must be resolved against the exact frozen contract; no installation or import/run was performed",
+    "public_complete_runtime": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/llava_runtime.py",
+    "imports": [
+      "PIL",
+      "__future__",
+      "adapter_q_fused_eager",
+      "author_dymu_bridge",
+      "author_pitome",
+      "check_environment",
+      "clip_peer_ports",
+      "contextlib",
+      "copy",
+      "dataclasses",
+      "grid",
+      "hashlib",
+      "importlib",
+      "ipcv_clip_batch",
+      "layout",
+      "os",
+      "pack_restore_triton",
+      "pathlib",
+      "pitome_author_fp16",
+      "prompting",
+      "relation_triton",
+      "run_port_job",
+      "sys",
+      "time",
+      "torch",
+      "transformers",
+      "types"
+    ],
+    "dependency_status": "STATIC_INVENTORY_ONLY; system packages and omitted relative modules must be resolved against the exact frozen contract; no installation or import/run was performed",
+    "public_complete_runtime": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/prompting.py",
+    "imports": [
+      "__future__"
+    ],
+    "dependency_status": "STATIC_INVENTORY_ONLY; system packages and omitted relative modules must be resolved against the exact frozen contract; no installation or import/run was performed",
+    "public_complete_runtime": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/run_job.py",
+    "imports": [
+      "__future__",
+      "argparse",
+      "checkpoint_journal",
+      "fidelity_policy",
+      "grid",
+      "hashlib",
+      "json",
+      "launch_plan",
+      "llava_runtime",
+      "os",
+      "pathlib",
+      "prepare_manifests",
+      "prepare_timing",
+      "release_integrity",
+      "time",
+      "torch",
+      "traceback",
+      "uuid"
+    ],
+    "dependency_status": "STATIC_INVENTORY_ONLY; system packages and omitted relative modules must be resolved against the exact frozen contract; no installation or import/run was performed",
+    "public_complete_runtime": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "releases/onevision_formal_integration_20260930_r1/source/route/benchmarks/smolvlm_full_reproduction_20260903/migration/smol_merge_ports.py",
+    "imports": [
+      "__future__",
+      "dataclasses",
+      "math",
+      "torch",
+      "transformers"
+    ],
+    "dependency_status": "STATIC_INVENTORY_ONLY; system packages and omitted relative modules must be resolved against the exact frozen contract; no installation or import/run was performed",
+    "public_complete_runtime": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/author_visual_source.py",
+    "imports": [
+      "__future__",
+      "ast",
+      "functools",
+      "hashlib",
+      "math",
+      "pathlib",
+      "torch",
+      "types",
+      "typing"
+    ],
+    "dependency_status": "STATIC_INVENTORY_ONLY; system packages and omitted relative modules must be resolved against the exact frozen contract; no installation or import/run was performed",
+    "public_complete_runtime": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/formal_fp32/checkpoint_journal.py",
+    "imports": [
+      "__future__",
+      "fcntl",
+      "json",
+      "msvcrt",
+      "os",
+      "pathlib",
+      "uuid",
+      "zlib"
+    ],
+    "dependency_status": "STATIC_INVENTORY_ONLY; system packages and omitted relative modules must be resolved against the exact frozen contract; no installation or import/run was performed",
+    "public_complete_runtime": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/formal_fp32/grid.py",
+    "imports": [
+      "dataset_registry"
+    ],
+    "dependency_status": "STATIC_INVENTORY_ONLY; system packages and omitted relative modules must be resolved against the exact frozen contract; no installation or import/run was performed",
+    "public_complete_runtime": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/formal_fp32/onevision_runtime.py",
+    "imports": [
+      "PIL",
+      "__future__",
+      "contextlib",
+      "dataclasses",
+      "grid",
+      "hashlib",
+      "importlib",
+      "json",
+      "onevision_ports",
+      "pathlib",
+      "precision_gate_rope_r1",
+      "sys",
+      "time",
+      "torch",
+      "transformers"
+    ],
+    "dependency_status": "STATIC_INVENTORY_ONLY; system packages and omitted relative modules must be resolved against the exact frozen contract; no installation or import/run was performed",
+    "public_complete_runtime": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/formal_fp32/run_job.py",
+    "imports": [
+      "__future__",
+      "argparse",
+      "checkpoint_journal",
+      "grid",
+      "hashlib",
+      "json",
+      "onevision_runtime",
+      "os",
+      "pathlib",
+      "prepare_manifests",
+      "prepare_timing",
+      "release_integrity",
+      "time",
+      "torch",
+      "traceback",
+      "uuid"
+    ],
+    "dependency_status": "STATIC_INVENTORY_ONLY; system packages and omitted relative modules must be resolved against the exact frozen contract; no installation or import/run was performed",
+    "public_complete_runtime": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/frozen_fp32_recipe/common.py",
+    "imports": [
+      "__future__",
+      "convert_original",
+      "hashlib",
+      "inspect_weights",
+      "json",
+      "pathlib"
+    ],
+    "dependency_status": "STATIC_INVENTORY_ONLY; system packages and omitted relative modules must be resolved against the exact frozen contract; no installation or import/run was performed",
+    "public_complete_runtime": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/onevision_ports.py",
+    "imports": [
+      "__future__",
+      "author_dtome_bridge",
+      "author_illava_bridge",
+      "author_visual_source",
+      "contextlib",
+      "global_ipcv_port",
+      "hashlib",
+      "pathlib",
+      "peer_common",
+      "smol_merge_ports",
+      "sys",
+      "torch",
+      "transformers"
+    ],
+    "dependency_status": "STATIC_INVENTORY_ONLY; system packages and omitted relative modules must be resolved against the exact frozen contract; no installation or import/run was performed",
+    "public_complete_runtime": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/precision_gate_rope_r1.py",
+    "imports": [],
+    "dependency_status": "STATIC_INVENTORY_ONLY; system packages and omitted relative modules must be resolved against the exact frozen contract; no installation or import/run was performed",
+    "public_complete_runtime": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "releases/qwen_minimal_peer_reuse_r6_20261001/source/checkpoint_journal.py",
+    "imports": [
+      "__future__",
+      "fcntl",
+      "json",
+      "msvcrt",
+      "os",
+      "pathlib",
+      "uuid",
+      "zlib"
+    ],
+    "dependency_status": "STATIC_INVENTORY_ONLY; system packages and omitted relative modules must be resolved against the exact frozen contract; no installation or import/run was performed",
+    "public_complete_runtime": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "releases/qwen_minimal_peer_reuse_r6_20261001/source/dataset_registry.py",
+    "imports": [
+      "__future__",
+      "dataclasses"
+    ],
+    "dependency_status": "STATIC_INVENTORY_ONLY; system packages and omitted relative modules must be resolved against the exact frozen contract; no installation or import/run was performed",
+    "public_complete_runtime": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "releases/qwen_minimal_peer_reuse_r6_20261001/source/fp16_eager_stability.py",
+    "imports": [
+      "__future__",
+      "hashlib",
+      "pathlib",
+      "torch",
+      "transformers"
+    ],
+    "dependency_status": "STATIC_INVENTORY_ONLY; system packages and omitted relative modules must be resolved against the exact frozen contract; no installation or import/run was performed",
+    "public_complete_runtime": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "releases/qwen_minimal_peer_reuse_r6_20261001/source/grid.py",
+    "imports": [
+      "__future__",
+      "dataset_registry"
+    ],
+    "dependency_status": "STATIC_INVENTORY_ONLY; system packages and omitted relative modules must be resolved against the exact frozen contract; no installation or import/run was performed",
+    "public_complete_runtime": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "releases/qwen_minimal_peer_reuse_r6_20261001/source/illava_multi_image_adapter.py",
+    "imports": [
+      "__future__",
+      "hashlib",
+      "math",
+      "torch",
+      "transformers",
+      "typing"
+    ],
+    "dependency_status": "STATIC_INVENTORY_ONLY; system packages and omitted relative modules must be resolved against the exact frozen contract; no installation or import/run was performed",
+    "public_complete_runtime": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "releases/qwen_minimal_peer_reuse_r6_20261001/source/illava_native_adapter.py",
+    "imports": [
+      "__future__",
+      "hashlib",
+      "illava_native_source",
+      "torch",
+      "transformers",
+      "typing"
+    ],
+    "dependency_status": "STATIC_INVENTORY_ONLY; system packages and omitted relative modules must be resolved against the exact frozen contract; no installation or import/run was performed",
+    "public_complete_runtime": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "releases/qwen_minimal_peer_reuse_r6_20261001/source/illava_native_source.py",
+    "imports": [
+      "__future__",
+      "ast",
+      "copy",
+      "hashlib",
+      "math",
+      "pathlib",
+      "torch",
+      "types"
+    ],
+    "dependency_status": "STATIC_INVENTORY_ONLY; system packages and omitted relative modules must be resolved against the exact frozen contract; no installation or import/run was performed",
+    "public_complete_runtime": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "releases/qwen_minimal_peer_reuse_r6_20261001/source/method_runtime.py",
+    "imports": [
+      "Qwen2VL_IPCV",
+      "__future__",
+      "contextlib",
+      "dataclasses",
+      "fp16_eager_stability",
+      "grid",
+      "h259_bridge",
+      "hashlib",
+      "illava_native_adapter",
+      "illava_qwen2vl_adapter",
+      "importlib",
+      "pathlib",
+      "qwen_peer_ports",
+      "sys",
+      "torch",
+      "transformers"
+    ],
+    "dependency_status": "STATIC_INVENTORY_ONLY; system packages and omitted relative modules must be resolved against the exact frozen contract; no installation or import/run was performed",
+    "public_complete_runtime": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "releases/qwen_minimal_peer_reuse_r6_20261001/source/peer_port_core.py",
+    "imports": [
+      "__future__",
+      "dataclasses",
+      "math",
+      "torch"
+    ],
+    "dependency_status": "STATIC_INVENTORY_ONLY; system packages and omitted relative modules must be resolved against the exact frozen contract; no installation or import/run was performed",
+    "public_complete_runtime": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "releases/qwen_minimal_peer_reuse_r6_20261001/source/qwen_peer_ports.py",
+    "imports": [
+      "__future__",
+      "dataclasses",
+      "hashlib",
+      "importlib",
+      "math",
+      "peer_port_core",
+      "torch"
+    ],
+    "dependency_status": "STATIC_INVENTORY_ONLY; system packages and omitted relative modules must be resolved against the exact frozen contract; no installation or import/run was performed",
+    "public_complete_runtime": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "releases/qwen_minimal_peer_reuse_r6_20261001/source/run_job.py",
+    "imports": [
+      "PIL",
+      "__future__",
+      "argparse",
+      "checkpoint_journal",
+      "collections",
+      "contextlib",
+      "grid",
+      "hashlib",
+      "json",
+      "method_runtime",
+      "os",
+      "pathlib",
+      "prepare_manifests",
+      "statistics",
+      "time",
+      "torch",
+      "traceback",
+      "uuid"
+    ],
+    "dependency_status": "STATIC_INVENTORY_ONLY; system packages and omitted relative modules must be resolved against the exact frozen contract; no installation or import/run was performed",
+    "public_complete_runtime": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "route/releases/smol_existing_configuration_correction_20261001_r1/source/route/benchmarks/smolvlm_full_reproduction_20260903/migration/dtome_legacy_bridge.py",
+    "imports": [
+      "importlib",
+      "pathlib",
+      "types"
+    ],
+    "dependency_status": "STATIC_INVENTORY_ONLY; system packages and omitted relative modules must be resolved against the exact frozen contract; no installation or import/run was performed",
+    "public_complete_runtime": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "route/releases/smol_existing_configuration_correction_20261001_r1/source/route/benchmarks/smolvlm_full_reproduction_20260903/migration/smol_ipcv_port.py",
+    "imports": [
+      "__future__",
+      "dataclasses",
+      "smol_merge_ports",
+      "torch",
+      "transformers"
+    ],
+    "dependency_status": "STATIC_INVENTORY_ONLY; system packages and omitted relative modules must be resolved against the exact frozen contract; no installation or import/run was performed",
+    "public_complete_runtime": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "route/releases/smol_existing_configuration_correction_20261001_r1/source/route/benchmarks/smolvlm_full_reproduction_20260903/migration/smol_merge_ports.py",
+    "imports": [
+      "__future__",
+      "dataclasses",
+      "math",
+      "torch",
+      "transformers"
+    ],
+    "dependency_status": "STATIC_INVENTORY_ONLY; system packages and omitted relative modules must be resolved against the exact frozen contract; no installation or import/run was performed",
+    "public_complete_runtime": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "route/releases/smol_existing_configuration_correction_20261001_r1/source/route/benchmarks/smolvlm_full_reproduction_20260903/production/peer_common.py",
+    "imports": [
+      "__future__",
+      "contextlib",
+      "dtome_legacy_bridge",
+      "hashlib",
+      "json",
+      "math",
+      "os",
+      "pathlib",
+      "smol_ficoco_port",
+      "smol_ipcv_port",
+      "smol_merge_ports"
+    ],
+    "dependency_status": "STATIC_INVENTORY_ONLY; system packages and omitted relative modules must be resolved against the exact frozen contract; no installation or import/run was performed",
+    "public_complete_runtime": "NOT_ASSERTED"
+  },
+  {
+    "source_relative_path": "route/releases/smol_existing_configuration_correction_20261001_r1/source/route/hypotheses/v439_h125_dtome_smolvlm_pope_full300/evaluate.py",
+    "imports": [
+      "PIL",
+      "__future__",
+      "base64",
+      "csv",
+      "gc",
+      "hashlib",
+      "huggingface_hub",
+      "io",
+      "json",
+      "math",
+      "pathlib",
+      "platform",
+      "random",
+      "re",
+      "statistics",
+      "subprocess",
+      "sys",
+      "torch",
+      "transformers",
+      "typing"
+    ],
+    "dependency_status": "STATIC_INVENTORY_ONLY; system packages and omitted relative modules must be resolved against the exact frozen contract; no installation or import/run was performed",
+    "public_complete_runtime": "NOT_ASSERTED"
+  }
+]

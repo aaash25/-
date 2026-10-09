@@ -1,0 +1,11 @@
+{
+  "license": {
+    "url": "https://github.com/huggingface/transformers/blob/v4.37.0/LICENSE",
+    "git_blob_sha": "68b7d66c97d66c58de883ed0c451af2b3183e6f3"
+  },
+  "clip_header": {
+    "url": "https://github.com/huggingface/transformers/blob/v4.37.0/src/transformers/models/clip/modeling_clip.py",
+    "git_blob_sha": "77d24a5da3251888b6342046759ea18fa4a3ba8f"
+  },
+  "source": "actual GitHub connector read at fixed v4.37.0"
+}

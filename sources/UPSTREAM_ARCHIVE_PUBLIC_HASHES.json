@@ -1,0 +1,62 @@
+[
+  {
+    "repository": "https://github.com/hchautran/PiToMe",
+    "commit": "550b5deed94aadfeac28bfbe381d87e672044a40",
+    "upstream_path": "algo/pitome/merge.py",
+    "upstream_git_blob_sha256": "135728c0e489419d25d65aba2b08fc6db1d563ffcbe7c48fe7e4c94e3f0cd8a6",
+    "archive_sha256": "57f286663de05b1ce6a239f0db015cf745475a8c271e4ac0d214dc3e521b6145",
+    "archive_relation": "LF-to-CRLF only",
+    "public_copy": {
+      "path": "migration_sources/upstream_references/pitome/algo/pitome/merge.py",
+      "archive_sha256": "57f286663de05b1ce6a239f0db015cf745475a8c271e4ac0d214dc3e521b6145",
+      "public_sha256": "f685f4b61ed30822875263658990eb9c3d2dad0640093c0dd97689ced7ca132f",
+      "archive_source_relative_path": "PiToMe/algo/pitome/merge.py",
+      "changes": "added publication/attribution comment header; CRLF-to-LF when present; no path substitutions were needed",
+      "algorithm_ast_identity": "PASS",
+      "license_basis": {
+        "author": "CC-BY-NC-4.0 (author portions; not a replacement for HF Apache notices)",
+        "HF_CLIP": "Apache-2.0 if CLIP-derived portions; no blanket relicensing"
+      }
+    }
+  },
+  {
+    "repository": "https://github.com/hchautran/PiToMe",
+    "commit": "550b5deed94aadfeac28bfbe381d87e672044a40",
+    "upstream_path": "algo/pitome/utils.py",
+    "upstream_git_blob_sha256": "9f32a1fa06743c822f60f7d130807202b56475c2121f08850aed5a9dc9b9dfce",
+    "archive_sha256": "fcbe905b6e24b827c92711bf5764cb27c888acf45423498946923f09aa629b40",
+    "archive_relation": "LF-to-CRLF only",
+    "public_copy": {
+      "path": "migration_sources/upstream_references/pitome/algo/pitome/utils.py",
+      "archive_sha256": "fcbe905b6e24b827c92711bf5764cb27c888acf45423498946923f09aa629b40",
+      "public_sha256": "f21b9eb582d8c4fe3ef9eb66aac6812a706895384d4dcccc72b93ed990dd52fd",
+      "archive_source_relative_path": "PiToMe/algo/pitome/utils.py",
+      "changes": "added publication/attribution comment header; CRLF-to-LF when present; no path substitutions were needed",
+      "algorithm_ast_identity": "PASS",
+      "license_basis": {
+        "author": "CC-BY-NC-4.0 (author portions; not a replacement for HF Apache notices)",
+        "HF_CLIP": "Apache-2.0 if CLIP-derived portions; no blanket relicensing"
+      }
+    }
+  },
+  {
+    "repository": "https://github.com/hchautran/PiToMe",
+    "commit": "550b5deed94aadfeac28bfbe381d87e672044a40",
+    "upstream_path": "algo/pitome/patch/clip_hf.py",
+    "upstream_git_blob_sha256": "a723bba2308917be4063016a378ba0dcffca2148e3c8f0f359962915b4c7bea3",
+    "archive_sha256": "a32b5db7e78b9e1c49cf7672d34ef75993ebbd4d8ff965828e97c90a071ea57a",
+    "archive_relation": "LF-to-CRLF only",
+    "public_copy": {
+      "path": "migration_sources/upstream_references/pitome/algo/pitome/patch/clip_hf.py",
+      "archive_sha256": "a32b5db7e78b9e1c49cf7672d34ef75993ebbd4d8ff965828e97c90a071ea57a",
+      "public_sha256": "0891d8a888216526af699670918ccb1b02a78c98c5d8114617f8e24ec22bae67",
+      "archive_source_relative_path": "PiToMe/algo/pitome/patch/clip_hf.py",
+      "changes": "added publication/attribution comment header; CRLF-to-LF when present; no path substitutions were needed",
+      "algorithm_ast_identity": "PASS",
+      "license_basis": {
+        "author": "CC-BY-NC-4.0 (author portions; not a replacement for HF Apache notices)",
+        "HF_CLIP": "Apache-2.0 if CLIP-derived portions; no blanket relicensing"
+      }
+    }
+  }
+]

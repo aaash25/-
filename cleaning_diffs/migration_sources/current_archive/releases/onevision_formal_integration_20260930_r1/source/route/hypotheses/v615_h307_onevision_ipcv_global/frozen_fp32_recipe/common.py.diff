@@ -1,0 +1,228 @@
+--- archive/releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/frozen_fp32_recipe/common.py
++++ migration_sources/current_archive/releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/frozen_fp32_recipe/common.py
+@@ -1,111 +1,114 @@
+-"""CPU-only contracts and frozen asset validation for the full-FP32 supplement."""
+-from __future__ import annotations
+-import hashlib
+-import json
+-from pathlib import Path
+-
+-HERE = Path(__file__).resolve().parent
+-MODEL_ID = "lmms-lab/llava-onevision-qwen2-7b-ov"
+-REVISION = "0b07bf7565e244cf4f39982249eafe8cd799d6dd"
+-DATA_SHA = "5200e3de4f4c4765aa2dab6e508ed00195b6952f35428f5b696823f048d6cb91"
+-CONFIG_SHA = "e2b4e0ee6c0a65284d3f6be692b6b0040134dc4eda3ea7b1f0af39f58ad68c2e"
+-INDEX_SHA = "7c71fe5c73d8a881db22b531efd7d8bd2c064a96d1b737ba5c0381c690937b39"
+-MODES = ["dense", "relation", "final"]
+-
+-def sha(data):
+-    return hashlib.sha256(data).hexdigest()
+-
+-def file_sha(path):
+-    digest = hashlib.sha256()
+-    with Path(path).open("rb") as stream:
+-        while block := stream.read(8 * 1024**2):
+-            digest.update(block)
+-    return digest.hexdigest()
+-
+-def canonical(value):
+-    return json.dumps(value, sort_keys=True, separators=(",", ":")).encode()
+-
+-def save(path, value):
+-    path = Path(path)
+-    path.parent.mkdir(parents=True, exist_ok=True)
+-    tmp = path.with_suffix(path.suffix + ".pending")
+-    tmp.write_text(json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False), encoding="utf-8")
+-    tmp.replace(path)
+-
+-def verify_release():
+-    release = json.loads((HERE / "RELEASE.json").read_text(encoding="utf-8"))
+-    for name, digest in release["files"].items():
+-        if sha((HERE / name).read_bytes()) != digest:
+-            raise RuntimeError(f"release file changed: {name}")
+-    return release
+-
+-def validate_assets(model_dir, dataset):
+-    policy = json.loads((HERE / "WEIGHTS_POLICY.json").read_text(encoding="utf-8"))
+-    if not policy["gpu_launch_enabled"] or not policy["accepted_source"]:
+-        raise RuntimeError("weight source has not been accepted; GPU launch is disabled")
+-    model_dir, dataset = Path(model_dir).resolve(), Path(dataset).resolve()
+-    if not (model_dir / "CONVERSION_RECEIPT.json").is_file():
+-        raise RuntimeError("missing verified official BF16-to-FP32 conversion receipt")
+-    from convert_original import recipe
+-    source, _, expected_config, expected_index, identity = recipe()
+-    receipt = json.loads((model_dir / "CONVERSION_RECEIPT.json").read_text(encoding="utf-8"))
+-    if receipt["state"] != "official_bf16_losslessly_converted" or receipt["identity"] != identity:
+-        raise RuntimeError("conversion origin/recipe mismatch; HF F16 upcasting is not accepted")
+-    if policy["accepted_source"] != {"repository": MODEL_ID, "revision": REVISION, "stored_dtype": "BF16"}:
+-        raise RuntimeError("accepted source differs from pinned original BF16")
+-    config = json.loads((model_dir / "config.json").read_text(encoding="utf-8"))
+-    index = json.loads((model_dir / "model.safetensors.index.json").read_text(encoding="utf-8"))
+-    if config != expected_config or index != expected_index:
+-        raise RuntimeError("derived config/index differs from the frozen conversion recipe")
+-    shards = sorted(set(index["weight_map"].values()))
+-    missing = [name for name in shards if not (model_dir / name).is_file()]
+-    if missing:
+-        raise RuntimeError(f"missing frozen model shards: {missing}")
+-    from inspect_weights import inspect
+-    stored = inspect(model_dir)
+-    if stored["parameters_by_stored_dtype"] != {"F32": source["parameters"]} or stored["tensors"] != source["tensors"]:
+-        raise RuntimeError("converted checkpoint tensor count/FP32 precision mismatch")
+-    for name in ("language_model.model.embed_tokens.weight", "language_model.lm_head.weight"):
+-        if stored["tensor_manifest"][name]["shape"] != [source["vocab_size"], config["text_config"]["hidden_size"]]:
+-            raise RuntimeError("original vocabulary tensor shape mismatch")
+-    if set(receipt["shards"]) != set(shards):
+-        raise RuntimeError("conversion shard receipt mismatch")
+-    for name in shards:
+-        record = receipt["shards"][name]
+-        if (record["source_sha256"] != source["source_shards"][name]["sha256"] or
+-            not record["bit_roundtrip_exact"] or not record["all_finite"] or
+-            (model_dir / name).stat().st_size != record["output_bytes"] or
+-            file_sha(model_dir / name) != record["output_sha256"]):
+-            raise RuntimeError(f"converted shard hash/roundtrip gate failed: {name}")
+-    required_assets = {p.name for p in (HERE / "weight_recipe/hf_template").iterdir()} | {"model.safetensors.index.json"}
+-    if set(receipt["nonweight_files_sha256"]) != required_assets:
+-        raise RuntimeError("processor/config receipt set mismatch")
+-    for name, digest in receipt["nonweight_files_sha256"].items():
+-        if file_sha(model_dir / name) != digest:
+-            raise RuntimeError(f"converted processor/config file changed: {name}")
+-        if name not in {"config.json", "model.safetensors.index.json"} and digest != file_sha(HERE / "weight_recipe/hf_template" / name):
+-            raise RuntimeError("processor differs from pinned HF template")
+-    if sha(dataset.read_bytes()) != DATA_SHA:
+-        raise RuntimeError("POPE.tsv differs from the FP16 dataset")
+-    return {"model_dir": str(model_dir), "dataset": str(dataset), "shards": shards,
+-            "checkpoint_bytes": index["metadata"]["total_size"],
+-            "fp32_weight_bytes_estimate": index["metadata"]["total_size"],
+-            "stored_precision": {k: v for k, v in stored.items() if k != "tensor_manifest"},
+-            "checkpoint_provenance": identity, "conversion_receipt_sha256": file_sha(model_dir / "CONVERSION_RECEIPT.json"),
+-            "identity_limit": "all converted shard contents rehashed before GPU loading; upstream official LFS hashes verified during conversion"}
+-
+-def job(phase):
+-    release = verify_release()
+-    images, questions = (2, 4) if phase == "smoke" else (32, 300)
+-    return {"id": "h290_onevision_full_fp32_" + phase, "worker": 0, "order": 0,
+-            "concurrency": 1, "gpus": 1, "precision": "float32_all_model",
+-            "method": "H290 frozen guarded relation plus Q restore", "model": MODEL_ID,
+-            "revision": REVISION, "dataset_sha256": DATA_SHA,
+-            "weight_origin": {"upstream_stored_dtype": "BF16", "runtime_dtype": "FP32", "native_fp32_checkpoint": False, "fp16_intermediate": False},
+-            "backend": {"vision_config": "eager", "text_config": "sdpa"},
+-            "source_hashes": release["files"], "weight": 2,
+-            "weight_basis": "FP32 scheduling weight; not a duration/performance estimate",
+-            "work": {"speed_images": images, "questions": questions,
+-                     "timing_modes": MODES, "timing_calls": images * 6,
+-                     "warmup_calls": images * 3, "feature_calls": images * 2,
+-                     "generation_calls": questions * 2, "max_new_tokens": 8}}
++# Publication copy: comments/line endings only; algorithm AST unchanged.
++# Project migration copy; retain upstream method and host notices. No experiment executed.
++# Component licensing and exact source hashes: sources/FILE_DISPOSITIONS.json.
++"""CPU-only contracts and frozen asset validation for the full-FP32 supplement."""
++from __future__ import annotations
++import hashlib
++import json
++from pathlib import Path
++
++HERE = Path(__file__).resolve().parent
++MODEL_ID = "lmms-lab/llava-onevision-qwen2-7b-ov"
++REVISION = "0b07bf7565e244cf4f39982249eafe8cd799d6dd"
++DATA_SHA = "5200e3de4f4c4765aa2dab6e508ed00195b6952f35428f5b696823f048d6cb91"
++CONFIG_SHA = "e2b4e0ee6c0a65284d3f6be692b6b0040134dc4eda3ea7b1f0af39f58ad68c2e"
++INDEX_SHA = "7c71fe5c73d8a881db22b531efd7d8bd2c064a96d1b737ba5c0381c690937b39"
++MODES = ["dense", "relation", "final"]
++
++def sha(data):
++    return hashlib.sha256(data).hexdigest()
++
++def file_sha(path):
++    digest = hashlib.sha256()
++    with Path(path).open("rb") as stream:
++        while block := stream.read(8 * 1024**2):
++            digest.update(block)
++    return digest.hexdigest()
++
++def canonical(value):
++    return json.dumps(value, sort_keys=True, separators=(",", ":")).encode()
++
++def save(path, value):
++    path = Path(path)
++    path.parent.mkdir(parents=True, exist_ok=True)
++    tmp = path.with_suffix(path.suffix + ".pending")
++    tmp.write_text(json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False), encoding="utf-8")
++    tmp.replace(path)
++
++def verify_release():
++    release = json.loads((HERE / "RELEASE.json").read_text(encoding="utf-8"))
++    for name, digest in release["files"].items():
++        if sha((HERE / name).read_bytes()) != digest:
++            raise RuntimeError(f"release file changed: {name}")
++    return release
++
++def validate_assets(model_dir, dataset):
++    policy = json.loads((HERE / "WEIGHTS_POLICY.json").read_text(encoding="utf-8"))
++    if not policy["gpu_launch_enabled"] or not policy["accepted_source"]:
++        raise RuntimeError("weight source has not been accepted; GPU launch is disabled")
++    model_dir, dataset = Path(model_dir).resolve(), Path(dataset).resolve()
++    if not (model_dir / "CONVERSION_RECEIPT.json").is_file():
++        raise RuntimeError("missing verified official BF16-to-FP32 conversion receipt")
++    from convert_original import recipe
++    source, _, expected_config, expected_index, identity = recipe()
++    receipt = json.loads((model_dir / "CONVERSION_RECEIPT.json").read_text(encoding="utf-8"))
++    if receipt["state"] != "official_bf16_losslessly_converted" or receipt["identity"] != identity:
++        raise RuntimeError("conversion origin/recipe mismatch; HF F16 upcasting is not accepted")
++    if policy["accepted_source"] != {"repository": MODEL_ID, "revision": REVISION, "stored_dtype": "BF16"}:
++        raise RuntimeError("accepted source differs from pinned original BF16")
++    config = json.loads((model_dir / "config.json").read_text(encoding="utf-8"))
++    index = json.loads((model_dir / "model.safetensors.index.json").read_text(encoding="utf-8"))
++    if config != expected_config or index != expected_index:
++        raise RuntimeError("derived config/index differs from the frozen conversion recipe")
++    shards = sorted(set(index["weight_map"].values()))
++    missing = [name for name in shards if not (model_dir / name).is_file()]
++    if missing:
++        raise RuntimeError(f"missing frozen model shards: {missing}")
++    from inspect_weights import inspect
++    stored = inspect(model_dir)
++    if stored["parameters_by_stored_dtype"] != {"F32": source["parameters"]} or stored["tensors"] != source["tensors"]:
++        raise RuntimeError("converted checkpoint tensor count/FP32 precision mismatch")
++    for name in ("language_model.model.embed_tokens.weight", "language_model.lm_head.weight"):
++        if stored["tensor_manifest"][name]["shape"] != [source["vocab_size"], config["text_config"]["hidden_size"]]:
++            raise RuntimeError("original vocabulary tensor shape mismatch")
++    if set(receipt["shards"]) != set(shards):
++        raise RuntimeError("conversion shard receipt mismatch")
++    for name in shards:
++        record = receipt["shards"][name]
++        if (record["source_sha256"] != source["source_shards"][name]["sha256"] or
++            not record["bit_roundtrip_exact"] or not record["all_finite"] or
++            (model_dir / name).stat().st_size != record["output_bytes"] or
++            file_sha(model_dir / name) != record["output_sha256"]):
++            raise RuntimeError(f"converted shard hash/roundtrip gate failed: {name}")
++    required_assets = {p.name for p in (HERE / "weight_recipe/hf_template").iterdir()} | {"model.safetensors.index.json"}
++    if set(receipt["nonweight_files_sha256"]) != required_assets:
++        raise RuntimeError("processor/config receipt set mismatch")
++    for name, digest in receipt["nonweight_files_sha256"].items():
++        if file_sha(model_dir / name) != digest:
++            raise RuntimeError(f"converted processor/config file changed: {name}")
++        if name not in {"config.json", "model.safetensors.index.json"} and digest != file_sha(HERE / "weight_recipe/hf_template" / name):
++            raise RuntimeError("processor differs from pinned HF template")
++    if sha(dataset.read_bytes()) != DATA_SHA:
++        raise RuntimeError("POPE.tsv differs from the FP16 dataset")
++    return {"model_dir": str(model_dir), "dataset": str(dataset), "shards": shards,
++            "checkpoint_bytes": index["metadata"]["total_size"],
++            "fp32_weight_bytes_estimate": index["metadata"]["total_size"],
++            "stored_precision": {k: v for k, v in stored.items() if k != "tensor_manifest"},
++            "checkpoint_provenance": identity, "conversion_receipt_sha256": file_sha(model_dir / "CONVERSION_RECEIPT.json"),
++            "identity_limit": "all converted shard contents rehashed before GPU loading; upstream official LFS hashes verified during conversion"}
++
++def job(phase):
++    release = verify_release()
++    images, questions = (2, 4) if phase == "smoke" else (32, 300)
++    return {"id": "h290_onevision_full_fp32_" + phase, "worker": 0, "order": 0,
++            "concurrency": 1, "gpus": 1, "precision": "float32_all_model",
++            "method": "H290 frozen guarded relation plus Q restore", "model": MODEL_ID,
++            "revision": REVISION, "dataset_sha256": DATA_SHA,
++            "weight_origin": {"upstream_stored_dtype": "BF16", "runtime_dtype": "FP32", "native_fp32_checkpoint": False, "fp16_intermediate": False},
++            "backend": {"vision_config": "eager", "text_config": "sdpa"},
++            "source_hashes": release["files"], "weight": 2,
++            "weight_basis": "FP32 scheduling weight; not a duration/performance estimate",
++            "work": {"speed_images": images, "questions": questions,
++                     "timing_modes": MODES, "timing_calls": images * 6,
++                     "warmup_calls": images * 3, "feature_calls": images * 2,
++                     "generation_calls": questions * 2, "max_new_tokens": 8}}

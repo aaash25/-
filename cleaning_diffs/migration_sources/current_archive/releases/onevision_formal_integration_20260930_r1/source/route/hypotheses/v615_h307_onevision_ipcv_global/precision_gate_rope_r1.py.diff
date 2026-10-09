@@ -1,0 +1,9 @@
+--- archive/releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/precision_gate_rope_r1.py
++++ migration_sources/current_archive/releases/onevision_formal_integration_20260930_r1/source/route/hypotheses/v615_h307_onevision_ipcv_global/precision_gate_rope_r1.py
+@@ -1,3 +1,6 @@
++# Publication copy: comments/line endings only; algorithm AST unchanged.
++# Project migration copy; retain upstream method and host notices. No experiment executed.
++# Component licensing and exact source hashes: sources/FILE_DISPOSITIONS.json.
+ """Transformers 4.57.6 native Qwen2 RoPE-buffer exception; checks only."""
+ def validate_model_precision(model,dtype,torch):
+     target=torch.device('cuda:0');name_exact='model.language_model.rotary_emb.inv_freq'

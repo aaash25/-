@@ -1,0 +1,40 @@
+[
+  {
+    "containing_archive_source": "releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/frozen_sources/pitome_author_fp16.py",
+    "payload_name": "merge.py",
+    "decoded_original_sha256": "57f286663de05b1ce6a239f0db015cf745475a8c271e4ac0d214dc3e521b6145",
+    "containing_archive_sha256": "b058fcae583b4eea2d10d477ed780aa87e08efbf34a36d2e72d34b65263d0a66",
+    "public_decoded_copy": {
+      "path": "migration_sources/decoded_author_payloads/pitome/merge.py",
+      "archive_sha256": "57f286663de05b1ce6a239f0db015cf745475a8c271e4ac0d214dc3e521b6145",
+      "public_sha256": "971ca87f731b3b1db252e42253d82168ccf046b247647da66068fd6d6dc5ea54",
+      "archive_source_relative_path": "releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/frozen_sources/pitome_author_fp16.py#AUTHOR_PAYLOADS/merge.py",
+      "changes": "added publication/attribution comment header; CRLF-to-LF when present; no path substitutions were needed",
+      "algorithm_ast_identity": "PASS",
+      "license_basis": {
+        "pitome": "CC-BY-NC-4.0 (author portions; not a replacement for HF Apache notices)",
+        "HF_CLIP": "Apache-2.0; fixed v4.37.0 copyright provenance recorded"
+      }
+    },
+    "payload_change": "NONE; decode is standard-library inspection only, never imports/executes the scientific payload"
+  },
+  {
+    "containing_archive_source": "releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/frozen_sources/pitome_author_fp16.py",
+    "payload_name": "patch/clip_hf.py",
+    "decoded_original_sha256": "a32b5db7e78b9e1c49cf7672d34ef75993ebbd4d8ff965828e97c90a071ea57a",
+    "containing_archive_sha256": "b058fcae583b4eea2d10d477ed780aa87e08efbf34a36d2e72d34b65263d0a66",
+    "public_decoded_copy": {
+      "path": "migration_sources/decoded_author_payloads/pitome/patch/clip_hf.py",
+      "archive_sha256": "a32b5db7e78b9e1c49cf7672d34ef75993ebbd4d8ff965828e97c90a071ea57a",
+      "public_sha256": "9aad3fed1db20e0b1ad2d297a92babd8f67fca90c21e29d2e6acd508ca84183c",
+      "archive_source_relative_path": "releases/llava_r7_fidelity_r5_20261001_r1/route/hypotheses/v611_h303_llava15_five_method_fp32_a800/frozen_sources/pitome_author_fp16.py#AUTHOR_PAYLOADS/patch/clip_hf.py",
+      "changes": "added publication/attribution comment header; CRLF-to-LF when present; no path substitutions were needed",
+      "algorithm_ast_identity": "PASS",
+      "license_basis": {
+        "pitome": "CC-BY-NC-4.0 (author portions; not a replacement for HF Apache notices)",
+        "HF_CLIP": "Apache-2.0; fixed v4.37.0 copyright provenance recorded"
+      }
+    },
+    "payload_change": "NONE; decode is standard-library inspection only, never imports/executes the scientific payload"
+  }
+]
